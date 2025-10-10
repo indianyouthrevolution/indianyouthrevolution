@@ -1,5 +1,9 @@
 <!DOCTYPE html><html lang="en">
 <head> 
+
+   <title>Indian Youth Revolution</title>
+  <link rel="icon" type="image/png" href="https://i.ibb.co/XkbBHgH9/iyr-logo.jpg">
+</head>
 <link rel="icon" href="https://i.ibb.co/tTrNdmDQ/iyr-logo.jpg" type="image/png">
 <link rel="icon" type="https://i.ibb.co/tTrNdmDQ/iyr-logo.jpg" href="https://i.ibb.co/tTrNdmDQ/iyr-logo.jpg">
 <link rel="apple-touch-icon" href="https://yourusername.github.io/og-image.jpg">
@@ -303,6 +307,68 @@ function toggleFounderInfo() {
     📸 Show Album
   </button>
 
+          <article class="card">
+  <h3>Membership Status</h3>
+  <p class="muted">If you are member than check your status through unique 5 digit id</p>
+  <button id="openStatusBtn" class="btn">Check Member Status</button>
+
+  <div id="statusPopup" style="display:none; margin-top:10px; border:1px solid #ccc; padding:10px; border-radius:8px;">
+    <input id="memberInput" type="text" placeholder="Enter your Unique ID (e.g. m-001)" style="padding:6px; border-radius:4px; border:1px solid #ccc;">
+    <button id="checkBtn" class="btn" style="margin-left:5px;">Check</button>
+    <div id="statusResult" style="margin-top:10px; font-size:14px;"></div>
+  </div>
+
+  <script>
+    const MEMBERS = [
+      {id: 'IYRY15', name: 'YUSUF KHAN', phone: '9330395465', email: 'yusufkhanyk7310@gmail.com'},
+      {id: 'IYRS71', name: 'SARIQ SADAB', phone: '7596****70', email: 'sariqsadab35@gmail.com'},
+      {id: 'IYRB71', name: 'BASHART MUSTAFA', phone: '8481****72', email: 'bmustafakgn@gmail.com'},
+      {id: 'IYRT75', name: 'TANVEER KHAN', phone: '6291****50', email: 'tanveerkhan0456@gmail.com'},
+      {id: 'IYRT80', name: 'TAMMIM UMMAR', phone: '6291****80', email: 'tammemumar@gmail.com'},
+      {id: 'IYRN25', name: 'NAYMAT JAHAN', phone: '9836****34', email: 'anjumsitara21@gmail.com'},
+      {id: 'IYRY23', name: 'YADAV SHARMA', phone: '7319****49', email: 'xarmayadav@gmail.com           '},
+      {id: 'm-008', name: 'Member 8', phone: '9000000008', email: 'm8@example.com'},
+      {id: 'm-009', name: 'Member 9', phone: '9000000009', email: 'm9@example.com'},
+      {id: 'm-010', name: 'Member 10', phone: '9000000010', email: 'm10@example.com'}
+    ];
+
+    const STORAGE_PREFIX = 'iyr_member_status_';
+
+    function loadStatus(id) {
+      const raw = localStorage.getItem(STORAGE_PREFIX + id);
+      if (!raw) return {active: false};
+      try { return JSON.parse(raw); } catch(e) { return {active:false}; }
+    }
+
+    document.getElementById('openStatusBtn').addEventListener('click', () => {
+      const popup = document.getElementById('statusPopup');
+      popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
+    });
+
+    document.getElementById('checkBtn').addEventListener('click', () => {
+      const id = document.getElementById('memberInput').value.trim().toLowerCase();
+      const resultDiv = document.getElementById('statusResult');
+      const member = MEMBERS.find(m => m.id.toLowerCase() === id);
+      if (!member) {
+        resultDiv.innerHTML = `<span style="color:red;">No member found for ID: ${id}</span>`;
+        return;
+      }
+      const status = loadStatus(member.id);
+      resultDiv.innerHTML = `
+        <div><strong>${member.name}</strong> (${member.id})</div>
+        <div>📞 ${member.phone}</div>
+        <div>✉️ ${member.email}</div>
+        <div style="margin-top:5px;">Status: 
+          <span style="color:${status.active ? 'green':'green'}; font-weight:600;">
+            ${status.active ? 'Active':'ACTIVE'}
+          </span>
+        </div>
+      `;
+    });
+  </script>
+</article>
+
+
   <!-- Hidden Album Section -->
   <div id="albumSection" style="display: none; margin-top: 20px;">
     <h4>📷 Photo Gallery</h4>
@@ -542,6 +608,7 @@ function toggleFounderInfo() {
   }
   </script></body>
 </html>
+
 
 
 
