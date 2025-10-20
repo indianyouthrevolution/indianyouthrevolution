@@ -17,7 +17,7 @@
   <meta property="og:description" content="A movement to inspire, unite and empower youth for positive change in India." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yourusername.github.io/" />
-  <meta property="og:image" content="https://i.ibb.co/XkbBHgH9/iyr-logo.jpg" />  <!-- Favicon (optional) -->  <link rel="icon" href="https://i.ibb.co/XkbBHgH9/iyr-logo.jpg" />  <style>
+  <meta property="og:image" content="https://yourusername.github.io/og-image.jpg" />  <!-- Favicon (optional) -->  <link rel="icon" href="favicon.ico" />  <style>
     :root{
       --bg:#0b0f14;         /* background */
       --card:#0f1621;       /* card */
@@ -41,8 +41,76 @@
     .btn:hover{transform:translateY(-1px)}
     .btn.secondary{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.15)}
     .btn.link{background:transparent;color:var(--brand);padding:0}
+    
 
-      <!-- Navbar -->
+    /* Navbar */
+    .nav{position:sticky;top:0;z-index:50;background:rgba(8,12,18,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-grid{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0}
+    .logo{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
+    .logo-badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#032227;font-weight:900}
+    .nav a{opacity:.95}
+    .menu{display:flex;gap:1rem;flex-wrap:wrap}
+    .menu a{padding:.5rem .7rem;border-radius:10px}
+    .menu a:hover{background:rgba(255,255,255,.06)}
+
+    /* Hero */
+    .hero{padding:64px 0 24px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+    .badge{display:inline-flex;gap:.5rem;align-items:center;border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:.35rem .7rem;color:var(--muted);font-size:.9rem}
+    .title{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:.6rem 0}
+    .lead{color:var(--muted);font-size:1.05rem}
+    .cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
+    .hero-card{background:linear-gradient(180deg,#0e1726,#0b1220);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:.6rem .8rem;border-radius:12px;text-align:center}
+
+    /* Sections */
+    section{padding:64px 0}
+    .sec-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:18px}
+    .h2{font-size:1.6rem;margin:0}
+    .muted{color:var(--muted)}
+
+    /* Timeline */
+    .timeline{position:relative;margin-top:16px}
+    .timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:linear-gradient(var(--brand),var(--brand-2))}
+    .t-item{display:grid;grid-template-columns:40px 1fr;gap:14px;margin-bottom:18px}
+    .t-dot{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#032227;font-weight:900;box-shadow:var(--shadow)}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:16px}
+
+    /* Grid Cards */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid.two{grid-template-columns:repeat(2,1fr)}
+    .grid.one{grid-template-columns:1fr}
+    .card h3{margin:.2rem 0 .4rem;font-size:1.1rem}
+
+    /* Shop */
+    .price{font-weight:800;font-size:1.2rem}
+
+    /* Footer */
+    footer{padding:36px 0;border-top:1px solid rgba(255,255,255,.08);color:var(--muted)}
+
+    /* Social icons */
+    .socials{display:flex;gap:.6rem;flex-wrap:wrap}
+    .icon-btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(255,255,255,.12);padding:.55rem .75rem;border-radius:12px}
+    .icon{width:18px;height:18px}
+
+    /* Floating WhatsApp */
+    .wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#031;display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1rem;border-radius:999px;font-weight:800;box-shadow:var(--shadow);z-index:60}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+      .stats{grid-template-columns:1fr 1fr 1fr}
+    }
+    @media (max-width:640px){
+      .menu{display:none}
+      .grid{grid-template-columns:1fr}
+      .stats{grid-template-columns:1fr 1fr}
+    }
+  </style></head>
+<body>
+  <!-- Navbar -->
 
   <!-- Header with Toggle Button -->
 <header class="nav">
@@ -670,11 +738,6 @@ function toggleFounderInfo() {
   }
   </script></body>
 </html>
-
-
-
-
-
 
 
 
