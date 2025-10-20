@@ -42,90 +42,42 @@
     .btn.secondary{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.15)}
     .btn.link{background:transparent;color:var(--brand);padding:0}
 
-    /* Navbar */
-    .nav{position:sticky;top:0;z-index:50;background:rgba(8,12,18,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
-    .nav-grid{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0}
-    .logo{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
-    .logo-badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#032227;font-weight:900}
-    .nav a{opacity:.95}
-    .menu{display:flex;gap:1rem;flex-wrap:wrap}
-    .menu a{padding:.5rem .7rem;border-radius:10px}
-    .menu a:hover{background:rgba(255,255,255,.06)}
+      <!-- Navbar -->
 
-    /* Hero */
-    .hero{padding:64px 0 24px}
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
-    .badge{display:inline-flex;gap:.5rem;align-items:center;border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:.35rem .7rem;color:var(--muted);font-size:.9rem}
-    .title{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:.6rem 0}
-    .lead{color:var(--muted);font-size:1.05rem}
-    .cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
-    .hero-card{background:linear-gradient(180deg,#0e1726,#0b1220);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow)}
-    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
-    .pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:.6rem .8rem;border-radius:12px;text-align:center}
+  <!-- Header with Toggle Button -->
+<header class="nav">
+  <div class="container nav-grid">
+    <a href="#home" class="logo" aria-label="IYR Home">
+      <span class="logo-badge">IYR</span>
+      <span>Indian Youth Revolution</span>
+    </a>
 
-    /* Sections */
-    section{padding:64px 0}
-    .sec-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:18px}
-    .h2{font-size:1.6rem;margin:0}
-    .muted{color:var(--muted)}
+    <nav class="menu" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#history">History</a>
+      <a href="#programs">Programs</a>
+      <a href="#work">Current Work</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    /* Timeline */
-    .timeline{position:relative;margin-top:16px}
-    .timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:linear-gradient(var(--brand),var(--brand-2))}
-    .t-item{display:grid;grid-template-columns:40px 1fr;gap:14px;margin-bottom:18px}
-    .t-dot{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#032227;font-weight:900;box-shadow:var(--shadow)}
-    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:16px}
+<a class="btn secondary" href="#join">Join Us</a>
 
-    /* Grid Cards */
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .grid.two{grid-template-columns:repeat(2,1fr)}
-    .grid.one{grid-template-columns:1fr}
-    .card h3{margin:.2rem 0 .4rem;font-size:1.1rem}
 
-    /* Shop */
-    .price{font-weight:800;font-size:1.2rem}
 
-    /* Footer */
-    footer{padding:36px 0;border-top:1px solid rgba(255,255,255,.08);color:var(--muted)}
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-    /* Social icons */
-    .socials{display:flex;gap:.6rem;flex-wrap:wrap}
-    .icon-btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(255,255,255,.12);padding:.55rem .75rem;border-radius:12px}
-    .icon{width:18px;height:18px}
-
-    /* Floating WhatsApp */
-    .wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#031;display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1rem;border-radius:999px;font-weight:800;box-shadow:var(--shadow);z-index:60}
-
-    /* Responsive */
-    @media (max-width:900px){
-      .hero-grid{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr 1fr}
-      .stats{grid-template-columns:1fr 1fr 1fr}
-    }
-    @media (max-width:640px){
-      .menu{display:none}
-      .grid{grid-template-columns:1fr}
-      .stats{grid-template-columns:1fr 1fr}
-    }
-  </style></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Modal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <!-- Navbar -->
-  <header class="nav">
-    <div class="container nav-grid">
-      <a href="#home" class="logo" aria-label="IYR Home">
-        <span class="logo-badge">IYR</span>
-        <span>Indian Youth Revolution</span>
-      </a>
-      <nav class="menu" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#history">History</a>
-        <a href="#programs">Programs</a>
-        <a href="#work">Current Work</a>
-        <a href="#shop">Shop</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="btn secondary" href="#join">Join Us</a>
-    </div>
+  
+</html>
   </header>  <!-- Hero -->  <section id="home" class="hero">
     <div class="container hero-grid">
       <div>
@@ -133,13 +85,14 @@
         <h1 class="title">Indian Youth Revolution (I.Y.R)</h1>
         <p class="lead">A youth-led movement building responsibility, compassion and action through motivation, education, charitable initiatives and research on human nature.</p>
         <div class="cta">
+          
           <a id="joinWhatsAppTop" class="btn" href="https://wa.me/919330395465" target="_blank" rel="noopener">Join on WhatsApp</a>
           <a class="btn secondary" href="#about">Explore the Mission</a>
         </div>
         <div class="stats">
           <div class="pill"><strong>10k+</strong><br><span class="muted">Youth reached</span></div>
           <div class="pill"><strong>50+</strong><br><span class="muted">Community drives</span></div>
-          <div class="pill"><strong>Daily</strong><br><span class="muted">Deen & Values</span></div>
+          <div class="pill"><strong>Daily</strong><br><span class="muted">daily teach</span></div>
         </div>
       </div>
       <div class="hero-card">
@@ -196,8 +149,8 @@
       <div class="t-item">
         <div class="t-dot">2024</div>
         <div class="card">
-          <strong>📖 Daily Deen & Values</strong>
-          <p class="muted">Started daily reflections on Hadith, Sunnah, and moral values — connecting faith with humanity and everyday action.</p>
+          <strong>📖 Daily Thaught & Values</strong>
+          <p class="muted">We share daily thaught & values </p>
         </div>
 
       </div>
@@ -229,7 +182,7 @@
 
   <!-- Photo Right -->
 <div style="text-align:center; flex-shrink:0;">
-  <img src="https://i.ibb.co/x8XJYbNW/Whats-App-Image-2025-09-02-at-22-07-26-183894c7.jpg" alt="Yusuf Khan" style="margin-top:10px; width:160px; height:160px; object-fit:cover;">
+  <img src="https://ik.imagekit.io/yusukhan/indian%20youth%20revolution/WhatsApp%20Image%202025-09-02%20at%2022.07.26_183894c7.jpg?updatedAt=1757754686680 alt="Yusuf Khan" style="margin-top:10px; width:160px; height:160px; object-fit:cover;">
   <p style="margin-top:10px; font-weight:bold; color:white; font-size:18px;">Yusuf Khan</p>
 </div>
 
@@ -267,8 +220,8 @@ function toggleFounderInfo() {
           <p class="muted">Design, video editing, coding basics, and career readiness workshops.</p>
         </div>
         <div class="card">
-          <h3>Deen & Humanity Messages</h3>
-          <p class="muted">Daily reminders on Hadith, Sunnah, and universal ethics for a better self.</p>
+          <h3>Humanity Messages</h3>
+          <p class="muted">Daily reminders on universal ethics for a better self.</p>
         </div>
         <div class="card">
           <h3>Research on Human Nature</h3>
@@ -297,9 +250,10 @@ function toggleFounderInfo() {
         </article>
         <article class="card">
           <h3>Daily Messages</h3>
-          <p class="muted">Short posts on values and Deen across WhatsApp/Instagram channels.</p>
+          <p class="muted">Short posts on values and Deen across WhatsApp/Instagram/Youtube channels.</p>
         </article>
-        <article class="card">
+       
+          <article class="card">
   <h3>Updates</h3>
   <p class="muted">Latest update on our website</p>
 
@@ -308,32 +262,54 @@ function toggleFounderInfo() {
     📸 Show Album
   </button>
 
-         
-
-
   <!-- Hidden Album Section -->
   <div id="albumSection" style="display: none; margin-top: 20px;">
+
+     <h4>🎥 Video Gallery</h4>
+
+<!-- Responsive 16:9 YouTube Video -->
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px; border-radius: 10px;">
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+  <iframe
+    src="https://www.youtube.com/embed/TXEtC7IvM58"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position:absolute;top:0;left:0;width:100%;height:100%;">
+  </iframe>
     <h4>📷 Photo Gallery</h4>
     <div style="display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px;">
-      <img src="photo1.jpg" alt="Photo 1" style="width: 200px; border-radius: 8px;">
+      <img src="https://i.ibb.co/20FPK5DQ/iyr-book.jpg" alt="Photo 1" style="width: 200px; border-radius: 8px;">
       <img src="photo2.jpg" alt="Photo 2" style="width: 200px; border-radius: 8px;">
       <img src="photo3.jpg" alt="Photo 3" style="width: 200px; border-radius: 8px;">
       <img src="photo4.jpg" alt="Photo 4" style="width: 200px; border-radius: 8px;">
       <!-- Add more <img> tags as needed -->
     </div>
 
-    <h4>🎥 Video Gallery</h4>
-    <iframe width="300" height="530" style="margin: 10px;"
-      src="https://www.youtube.com/embed/E8pWtQdenDY"
-      title="YouTube Shorts Player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+</div>
+
+</div>
+
   </div>
 </article>
 
-          <article class="card">
+<script>
+  function toggleAlbum() {
+    const album = document.getElementById("albumSection");
+    album.style.display = album.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+<!-- JavaScript to Toggle Album -->
+<script>
+  function toggleAlbum() {
+    const album = document.getElementById("albumSection");
+    album.style.display = album.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+
+<article class="card">
   <h3>Membership Status</h3>
   <p class="muted">If you are member than check your status through unique 5 digit id</p>
   <button id="openStatusBtn" class="btn">Check Member Status</button>
@@ -393,9 +369,14 @@ function toggleFounderInfo() {
     });
   </script>
 </article>
+
+        </article>
+        
+       
+        
+
       </div>
     </div>
-    
   </section>  <!-- Shop / Cup Order -->  <section id="shop">
     <div class="container">
       <div class="sec-head">
@@ -449,48 +430,77 @@ function toggleFounderInfo() {
         </div>
       </div>
     </div>
-  </section>  <!-- Socials + Contact -->  <section id="contact">
-    <div class="container">
-      <div class="sec-head">
-        <h2 class="h2">Connect with IYR</h2>
-        <p class="muted">Follow, message, collaborate</p>
-      </div>
-      <div class="grid two">
-        <div class="card">
-          <h3>Social Profiles</h3>
-          <div class="socials" style="margin-top:.5rem">
-            <a class="icon-btn" id="igLink" href="https://www.instagram.com/indianyouthrevolution/" target="_blank" rel="noopener">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/></svg>
-              Instagram
-            </a>
-            <a class="icon-btn" id="fbLink" href="https://www.facebook.com/profile.php?id=61580076278966" target="_blank" rel="noopener">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22V12h3l1-4h-4V6.5A1.5 1.5 0 0114.5 5H17V1h-3a5 5 0 00-5 5v2H6v4h3v10h4z"/></svg>
-              Facebook
-            </a>
-            <a class="icon-btn" id="ytLink" href="https://www.youtube.com/@IndianYouthRevolution" target="_blank" rel="noopener">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5a3 3 0 00-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 001 7.5 31 31 0 000 12a31 31 0 001 4.5 3 3 0 002.1 2.1C5 19 12 19 12 19s7 0 8.9-.4A3 3 0 0023 16.5 31 31 0 0024 12a31 31 0 00-1-4.5zM10 15.5V8.5L16 12l-6 3.5z"/></svg>
-              YouTube
-            </a>
-            <a class="icon-btn" id="xLink" href="https://x.com" target="_blank" rel="noopener">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h4.7l4.2 6 5.8-6H21l-7.4 7.8L21 21h-4.7l-4.6-6.6L5.5 21H3l8-8.5L3 3z"/></svg>
-              X / Twitter
-            </a>
-          </div>
+<!-- Connect with IYR -->
+<section id="connect">
+  <div class="container">
+    <div class="sec-head" style="text-align:center;margin-bottom:32px;">
+      <h2 class="h2">Connect with IYR</h2>
+      <p class="muted">Follow, message, collaborate</p>
+    </div>
+
+    <div class="grid two" 
+         style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+                gap:24px;justify-content:center;align-items:stretch;
+                padding:16px;max-width:900px;margin:auto;">
+      
+      <!-- Social Profiles -->
+      <div class="card" 
+           style="border:1px solid #ccc;border-radius:12px;padding:20px;
+                  display:flex;flex-direction:column;justify-content:center;">
+        <h3 style="margin-bottom:12px;">Social Profiles</h3>
+        <div class="socials" style="display:flex;flex-direction:column;gap:10px;">
+          <a class="icon-btn" id="igLink" 
+             href="https://www.instagram.com/indianyouthrevolution/" 
+             target="_blank" rel="noopener"
+             style="display:flex;align-items:center;gap:8px;color:#2dd4bf;text-decoration:none;">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/></svg>
+            Instagram
+          </a>
+          <a class="icon-btn" id="fbLink" href="https://facebook.com/iyr.india" target="_blank" rel="noopener"
+             style="display:flex;align-items:center;gap:8px;color:#2dd4bf;text-decoration:none;">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M13 22V12h3l1-4h-4V6.5A1.5 1.5 0 0114.5 5H17V1h-3a5 5 0 00-5 5v2H6v4h3v10h4z"/></svg>
+            Facebook
+          </a>
+          <a class="icon-btn" id="ytLink" href="https://www.youtube.com/@IndianYouthRevolution" target="_blank" rel="noopener"
+             style="display:flex;align-items:center;gap:8px;color:#2dd4bf;text-decoration:none;">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M23 7.5a3 3 0 00-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 001 7.5 31 31 0 000 12a31 31 0 001 4.5 3 3 0 002.1 2.1C5 19 12 19 12 19s7 0 8.9-.4A3 3 0 0023 16.5 31 31 0 0024 12a31 31 0 00-1-4.5zM10 15.5V8.5L16 12l-6 3.5z"/></svg>
+            YouTube
+          </a>
+          <a class="icon-btn" id="xLink" href="https://x.com" target="_blank" rel="noopener"
+             style="display:flex;align-items:center;gap:8px;color:#2dd4bf;text-decoration:none;">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M3 3h4.7l4.2 6 5.8-6H21l-7.4 7.8L21 21h-4.7l-4.6-6.6L5.5 21H3l8-8.5L3 3z"/></svg>
+            X / Twitter
+          </a>
         </div>
-        <div class="card">
-          <h3>Contact</h3>
-          <p class="muted">Questions, collaborations, volunteering or media? We’d love to hear from you.</p>
-          <p>
-            <strong>Email:</strong> <a id="emailLink" href="mailto:iyrindiaanyouthrevolution@gmail.com">iyrindiaanyouthrevolution@gmail.com</a><br>
-            <strong>WhatsApp:</strong> <a id="waLink" href="https://wa.me/9330395465" target="_blank" rel="noopener">Message us</a>
-          </p>
-          <div class="cta">
-            <a class="btn" href="#join" aria-label="Join IYR">Become a Member</a>
-            <a class="btn secondary" href="#programs">See Programs</a>
-          </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="card" 
+           style="border:1px solid #ccc;border-radius:12px;padding:20px;
+                  display:flex;flex-direction:column;justify-content:center;">
+        <h3 style="margin-bottom:12px;">Contact</h3>
+        <p class="muted" style="margin-bottom:10px;">Questions, collaborations, volunteering or media? We’d love to hear from you.</p>
+        <p style="margin-bottom:12px;">
+          <strong>Email:</strong> 
+          <a id="emailLink" href="mailto:iyrindiaanyouthrevolution@gmail.com">iyrindiaanyouthrevolution@gmail.com</a><br>
+          <strong>WhatsApp:</strong> 
+          <a id="waLink" href="https://wa.me/9330395465" target="_blank" rel="noopener">Message us</a>
+        </p>
+        <div class="cta" style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="btn" href="#join" aria-label="Join IYR" 
+             style="background:#2dd4bf;color:rgb(0, 0, 0);padding:8px 14px;border-radius:6px;text-decoration:none;">
+             Become a Member
+          </a>
+          <a class="btn secondary" href="#programs" 
+             style="border:1px solid #ffffff;color:#ffffff;padding:8px 14px;border-radius:6px;text-decoration:none;">
+             See Programs
+          </a>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
   </section>  <!-- Join -->  <section id="join">
 
   <div class="container">
@@ -546,7 +556,7 @@ function toggleFounderInfo() {
         <a class="icon-btn" href="#contact">Contact</a>
       </div>
     </div>
-<!-- Floating WhatsApp Button -->
+ <!-- Floating WhatsApp Button -->
 <a class="wa-float" id="waFloat" 
    href="https://wa.me/9330395465" 
    target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
@@ -560,7 +570,7 @@ function toggleFounderInfo() {
 .wa-float {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 120px;
   background-color: #25d366;
   color: white;
   border-radius: 50px;
@@ -588,10 +598,10 @@ function toggleFounderInfo() {
 @media (max-width: 600px) {
   .wa-float {
     bottom: 15px;
-    right: 120px;
+    right: 15px;
     padding: 10px 14px;
     font-size: 14px;
-  }
+  } 
   .wa-float .icon {
     width: 20px;
     height: 20px;
@@ -633,7 +643,7 @@ function toggleFounderInfo() {
     set('fbLink', CONFIG.facebook);
     set('ytLink', CONFIG.youtube);
     set('xLink', CONFIG.twitter);
-    set('iyrindiaanyouthrevolution@gmail.com', mailto:${CONFIG.iyrindiaanyouthrevolution@gmail.com});
+    set('iyrindiaanyouthrevolution@gmail.com', mailto:${CONFIG.iyrindianyouthrevolution@gmail.com});
     set('iyrindiaanyouthrevolution@gmail.com', mailto:${CONFIG.email});
 
     // Year
