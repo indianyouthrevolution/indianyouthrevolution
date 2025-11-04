@@ -1,768 +1,823 @@
-<!DOCTYPE html><html lang="en">
-<head> 
-<head>
-  <title>Indian Youth Revolution</title>
-  <link rel="icon" type="image/png" href="https://i.ibb.co/XkbBHgH9/iyr-logo.jpg">
-</head>
-  <script async type="application/javascript"
-        src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
-<script>
-  (self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
-    basicSubscriptions.init({
-      type: "NewsArticle",
-      isPartOfType: ["Product"],
-      isPartOfProductId: "CAow_IHDDA:openaccess",
-      clientOptions: { theme: "light", lang: "en-GB" },
-    });
-  });
-</script>
-
-<link rel="icon" href="https://i.ibb.co/tTrNdmDQ/iyr-logo.jpg" type="https://i.ibb.co/XkbBHgH9/iyr-logo.jpg">
-<link rel="icon" type="https://i.ibb.co/tTrNdmDQ/iyr-logo.jpg" href="https://i.ibb.co/XkbBHgH9/iyr-logo.jpg">
-<link rel="apple-touch-icon" href="https://i.ibb.co/XkbBHgH9/iyr-logo.jpg">
-
-<meta name="google-site-verification" content="QdWp6KclUO3WdEfBuTkQhXAhnqjiTWrIhc3XT16dT9E" />
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Indian Youth Revolution (I.Y.R) — Inspire • Unite • Empower</title>
-  <meta name="description" content="Indian Youth Revolution (I.Y.R) is a youth-led movement in India focused on motivation, education, charity, community development, and daily values. Join the movement." />  <!-- Open Graph / SEO -->  <meta property="og:title" content="Indian Youth Revolution (I.Y.R)" />
-  <meta property="og:description" content="A movement to inspire, unite and empower youth for positive change in India." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourusername.github.io/" />
-  <meta property="og:image" content="https://yourusername.github.io/og-image.jpg" />  <!-- Favicon (optional) -->  <link rel="icon" href="favicon.ico" />  <style>
-    :root{
-      --bg:#0b0f14;         /* background */
-      --card:#0f1621;       /* card */
-      --muted:#8aa0b7;      /* text secondary */
-      --text:#e8f0ff;       /* text primary */
-      --brand:#2dd4bf;      /* teal */
-      --brand-2:#60a5fa;    /* blue */
-      --accent:#f59e0b;     /* amber */
-      --danger:#ef4444;     /* red */
-      --ring: 0 0 0 3px rgba(45,212,191,.35);
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 18px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:linear-gradient(180deg,var(--bg),#0b1220 50%, #0b0f14); color:var(--text)}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{width:min(1100px,92%);margin-inline:auto}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--brand);color:#05121a;padding:.9rem 1.1rem;border-radius:12px;font-weight:700;box-shadow:var(--shadow);transition:.2s border,.2s transform}
-    .btn:hover{transform:translateY(-1px)}
-    .btn.secondary{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.15)}
-    .btn.link{background:transparent;color:var(--brand);padding:0}
-    
-
-    /* Navbar */
-    .nav{position:sticky;top:0;z-index:50;background:rgba(8,12,18,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
-    .nav-grid{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0}
-    .logo{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
-    .logo-badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#032227;font-weight:900}
-    .nav a{opacity:.95}
-    .menu{display:flex;gap:1rem;flex-wrap:wrap}
-    .menu a{padding:.5rem .7rem;border-radius:10px}
-    .menu a:hover{background:rgba(255,255,255,.06)}
-
-    /* Hero */
-    .hero{padding:64px 0 24px}
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
-    .badge{display:inline-flex;gap:.5rem;align-items:center;border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:.35rem .7rem;color:var(--muted);font-size:.9rem}
-    .title{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:.6rem 0}
-    .lead{color:var(--muted);font-size:1.05rem}
-    .cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
-    .hero-card{background:linear-gradient(180deg,#0e1726,#0b1220);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow)}
-    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
-    .pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:.6rem .8rem;border-radius:12px;text-align:center}
-
-    /* Sections */
-    section{padding:64px 0}
-    .sec-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:18px}
-    .h2{font-size:1.6rem;margin:0}
-    .muted{color:var(--muted)}
-
-    /* Timeline */
-    .timeline{position:relative;margin-top:16px}
-    .timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:linear-gradient(var(--brand),var(--brand-2))}
-    .t-item{display:grid;grid-template-columns:40px 1fr;gap:14px;margin-bottom:18px}
-    .t-dot{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#032227;font-weight:900;box-shadow:var(--shadow)}
-    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:16px}
-
-    /* Grid Cards */
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .grid.two{grid-template-columns:repeat(2,1fr)}
-    .grid.one{grid-template-columns:1fr}
-    .card h3{margin:.2rem 0 .4rem;font-size:1.1rem}
-
-    /* Shop */
-    .price{font-weight:800;font-size:1.2rem}
-
-    /* Footer */
-    footer{padding:36px 0;border-top:1px solid rgba(255,255,255,.08);color:var(--muted)}
-
-    /* Social icons */
-    .socials{display:flex;gap:.6rem;flex-wrap:wrap}
-    .icon-btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(255,255,255,.12);padding:.55rem .75rem;border-radius:12px}
-    .icon{width:18px;height:18px}
-
-    /* Floating WhatsApp */
-    .wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#031;display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1rem;border-radius:999px;font-weight:800;box-shadow:var(--shadow);z-index:60}
-
-    /* Responsive */
-    @media (max-width:900px){
-      .hero-grid{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr 1fr}
-      .stats{grid-template-columns:1fr 1fr 1fr}
-    }
-    @media (max-width:640px){
-      .menu{display:none}
-      .grid{grid-template-columns:1fr}
-      .stats{grid-template-columns:1fr 1fr}
-    }
-  </style></head>
-<body>
-  <!-- Navbar -->
-
-  <!-- Header with Toggle Button -->
-<header class="nav">
-  <div class="container nav-grid">
-    <a href="#home" class="logo" aria-label="IYR Home">
-      <span class="logo-badge">IYR</span>
-      <span>Indian Youth Revolution</span>
-    </a>
-
-    <nav class="menu" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#history">History</a>
-      <a href="#programs">Programs</a>
-      <a href="#work">Current Work</a>
-      <a href="#shop">Shop</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-<a class="btn secondary" href="#join">Join Us</a>
-
-
-
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Modal</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="google-site-verification" content="QdWp6KclUO3WdEfBuTkQhXAhnqjiTWrIhc3XT16dT9E" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Indian Youth Revolution (I.Y.R) — Inspire • Unite • Empower</title>
+
+  <link rel="icon" href="https://i.ibb.co/XkbBHgH9/iyr-logo.jpg" type="image/png">
+  <link rel="apple-touch-icon" href="https://i.ibb.co/XkbBHgH9/iyr-logo.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{ --bg:#0b0f14; --card:#0f1621; --muted:#8aa0b7; --text:#e8f0ff; --brand:#2dd4bf; --brand2:#60a5fa; --radius:14px; --shadow:0 12px 30px rgba(0,0,0,.45); }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;padding:0;font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial;background:linear-gradient(180deg,var(--bg),#07131a 60%);color:var(--text);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img,iframe,svg{max-width:100%;display:block;height:auto}
+    .container{width:min(1100px,94%);margin-inline:auto;padding:0 12px}
+
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#021212;padding:.6rem .85rem;border-radius:10px;font-weight:700;border:0;cursor:pointer;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.06);color:var(--text)}
+    .btn.link{background:transparent;padding:0;color:var(--brand)}
+    .tiny{font-size:.92rem;color:var(--muted)}
+
+    /* NAV */
+    header.nav{position:sticky;top:0;z-index:999;background:rgba(6,10,14,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.03)}
+    .nav-grid{display:flex;align-items:center;justify-content:space-between;padding:.6rem 0;gap:12px}
+    .logo{display:flex;align-items:center;gap:.6rem}
+    .logo-badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#021212;font-weight:900;font-size:12px}
+    .logo-text{font-weight:800;font-size:1rem}
+    .menu{display:flex;gap:12px;align-items:center}
+    .menu a{padding:.4rem .6rem;border-radius:8px}
+
+    .hamburger{display:none;background:transparent;border:0;color:var(--text);font-size:22px;padding:6px;border-radius:8px;cursor:pointer}
+
+
+
+
+    /* HERO */
+    .hero{padding:28px 0 20px}
+    .hero-grid{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:center}
+    .badge{display:inline-flex;gap:.5rem;align-items:center;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:.35rem .7rem;color:var(--muted);font-size:.88rem}
+    .title{font-size:clamp(1.6rem,6vw,2.4rem);line-height:1.05;margin:.4rem 0;font-weight:800}
+    .lead{color:var(--muted);font-size:1rem}
+
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .pill{background:rgba(255,255,255,.02);border-radius:10px;padding:.7rem .6rem;text-align:center;color:var(--muted)}
+
+    section{padding:44px 0}
+    .sec-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+    .h2{font-size:1.15rem;margin:0}
+    .card{background:var(--card);border-radius:12px;padding:14px;border:1px solid rgba(255,255,255,0.04)}
+
+    /* Programs: horizontal scroll cards */
+    .programs-row{display:flex;gap:12px;overflow-x:auto;padding:12px;scroll-snap-type:x mandatory}
+    .program-card{flex:0 0 260px;min-width:260px;scroll-snap-align:center;border-radius:12px;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0));border:1px solid rgba(255,255,255,0.03);box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
+    .program-card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 18px 40px rgba(0,0,0,.55)}
+
+    .grid-columns-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .grid-columns-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+
+    /* timeline */
+    .timeline{position:relative;margin-top:10px}
+    .timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--brand),var(--brand2));border-radius:2px}
+    .t-item{display:grid;grid-template-columns:46px 1fr;gap:12px;margin-bottom:16px;opacity:0;transform:translateX(-18px) scale(.98);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.9,.3,1)}
+    .t-item.in-view{opacity:1;transform:translateX(0) scale(1.03)}
+    .t-dot{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#021212;font-weight:900}
+
+    /* video & album */
+    .video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px}
+    .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+    .video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(2,6,10,0.25), rgba(2,6,10,0.06));}
+    .play-pill{background:rgba(255,255,255,0.95);border-radius:999px;padding:14px 18px;font-weight:900;font-size:18px;border:0}
+
+    /* latest (vertical list) */
+    .latest-wrap{position:relative}
+    .latest-vertical{display:flex;flex-direction:column;gap:12px;max-height:calc(55vh);overflow:auto;padding:6px}
+    .latest-card{width:100%;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0));border-radius:10px;padding:12px;border:1px solid rgba(255,255,255,0.04);display:flex;gap:12px;align-items:flex-start}
+    .latest-date{min-width:110px;text-align:center;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, rgba(45,212,191,0.06), rgba(96,165,250,0.03));font-weight:700}
+    .latest-body{flex:1}
+    .latest-title{font-size:1rem;margin:0 0 6px}
+    .latest-desc{color:var(--muted);font-size:.95rem}
+
+    /* members */
+    .members-table{width:100%;border-collapse:collapse}
+    .members-table th, .members-table td{padding:8px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left;font-size:.95rem;color:var(--text)}
+
+    /* shop */
+    .shop-row{display:flex;gap:12px;overflow-x:auto;padding:8px}
+    .shop-card{min-width:260px;display:grid;grid-template-columns:100px 1fr;gap:10px;align-items:center;transition:transform .35s,box-shadow .35s}
+    .shop-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,.45)}
+    .shop-card img{border-radius:8px;transition:transform .6s ease}
+    .shop-card:hover img{transform:scale(1.06) rotate(-1deg)}
+    .shop-actions{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+
+    /* social bar */
+    .social-bar{display:flex;gap:8px;flex-wrap:wrap}
+    .social-btn{display:inline-flex;align-items:center;gap:8px;padding:.5rem .7rem;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:transparent;color:var(--brand);font-weight:700;transition:transform .15s ease,box-shadow .15s}
+    .social-btn:hover,.social-btn:active,.social-btn.pressed{transform:translateY(-6px) scale(1.03);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+
+    /* join animation */
+    .pulse{animation:pulse 2s infinite ease-in-out}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+
+    /* responsive */
+    @media (min-width:900px){ .hero-grid{grid-template-columns:1fr 320px} }
+    @media (max-width:900px){ .menu{display:none} .hamburger{display:inline-flex} .grid-columns-3{grid-template-columns:1fr 1fr} }
+    @media (max-width:640px){ .logo-text{display:none} .grid-columns-3,.grid-columns-2{grid-template-columns:1fr} .hero-grid{grid-template-columns:1fr} .latest-vertical{max-height:45vh} }
+
+    /* animations (stronger) */
+    .fade-up{opacity:0;transform:translateY(16px) scale(.98);transition:opacity .6s ease, transform .6s cubic-bezier(.2,.9,.3,1)}
+    .in-view{opacity:1;transform:translateY(0) scale(1)}
+
+    /* ABOUT card animation */
+    .about-card{transition:transform .45s ease,box-shadow .45s ease}
+    .about-card.in-view{transform:translateY(-10px) scale(1.02);box-shadow:0 20px 40px rgba(0,0,0,.45)}
+
+    /* Founder animation: smooth slide + fade + subtle border glow */
+    #founderInfo{max-height:0;overflow:hidden;opacity:0;transform:translateY(6px);transition:max-height .45s ease,opacity .45s ease,transform .45s cubic-bezier(.2,.9,.3,1);border-radius:8px}
+    #founderInfo.open{max-height:400px;opacity:1;transform:translateY(0);box-shadow:0 18px 40px rgba(106,13,173,0.12);border:1px solid rgba(106,13,173,0.25);background:linear-gradient(90deg, rgba(106,13,173,0.04), rgba(45,212,191,0.02))}
+
+    /* Floating WhatsApp */
+    .wa-float{position:fixed;right:18px;bottom:18px;background:#25d366;color:white;border-radius:999px;padding:10px 14px;font-weight:800;display:flex;align-items:center;gap:8px;z-index:2000;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+
+    a:focus,button:focus,input:focus{outline:none;box-shadow:0 0 0 3px rgba(45,212,191,0.12);border-radius:8px}
+    input[type="text"], input[type="url"]{padding:.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+  </style>
 </head>
 <body>
-  
-</html>
-  </header>  <!-- Hero -->  <section id="home" class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="badge">Inspire • Unite • Empower</span>
-        <h1 class="title">Indian Youth Revolution (I.Y.R)</h1>
-        <p class="lead">A youth-led movement building responsibility, compassion and action through motivation, education, charitable initiatives and research on human nature.</p>
-        <div class="cta">
-          
-          <a id="joinWhatsAppTop" class="btn" href="https://wa.me/919330395465" target="_blank" rel="noopener">Join on WhatsApp</a>
-          <a class="btn secondary" href="#about">Explore the Mission</a>
-            <a id="wbstudentsweb" class="btn" 
-   href="https://indianyouthrevolution.github.io/wbstudents/" 
-   target="_blank" rel="noopener"
-   style="background-color: #204d78; color: white; padding: 10px 20px; border-radius: 10px; text-decoration: none;">
-  Students site
-</a>
-        </div>
-        <div class="stats">
-          <div class="pill"><strong>10k+</strong><br><span class="muted">Youth reached</span></div>
-          <div class="pill"><strong>50+</strong><br><span class="muted">Community drives</span></div>
-          <div class="pill"><strong>Daily</strong><br><span class="muted">daily teach</span></div>
-        </div>
+
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <div class="container nav-grid">
+      <div style="display:flex;align-items:center;gap:30px">
+        <a href="#home" class="logo" aria-label="IYR Home" style="display:flex;align-items:center;gap:10px;" id="homeLogo">
+          <span class="logo-badge">IYR</span>
+          <span class="logo-text">Indian Youth Revolution</span>
+        </a>
       </div>
-      <div class="hero-card">
-        <img src="https://i.ibb.co/7dzqtBgt/iyr-logo.jpg">
+
+    
+        <div class="menu" role="navigation" aria-label="Primary menu">
+          <a href="#about">About</a>
+          <a href="#history">History</a>
+          <a href="#programs">Programs</a>
+          <a href="#work">Current Work</a>
+          <a href="#shop">Shop</a>
+          <a href="#connect">Contact</a>
+        </div>
+
+        <button id="hamburger" class="hamburger" aria-label="Open menu">☰</button>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:8px">
+        <!-- KEEP ONLY Join Us in header as requested -->
+        <a id="joinUsHeader" class="btn" href="#join">Join Us</a>
       </div>
     </div>
-  </section>  <!-- About / Mission -->  <section id="about">
-    <div class="container">
-      <div class="sec-head">
-        <h2 class="h2">About I.Y.R</h2>
-        <p class="muted">Vision • Mission • Values</p>
+
+  </header>
+
+  <!-- HERO -->
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="fade-up">
+          <div class="badge">Inspire • Unite • Empower</div>
+          <h1 class="title">Indian Youth Revolution (I.Y.R)</h1>
+          <p class="lead">A youth-led movement building responsibility, compassion and action through motivation, education and community work.</p>
+
+          <div class="cta" style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn secondary" href="#about">Explore the Mission</a>
+            <!-- Shortcut button next to Explore the Mission -->
+            <a class="btn" href="#join">Join the Movement</a>
+          </div>
+
+          <div class="stats" style="margin-top:14px">
+            <div class="pill"><strong>10k+</strong><br><span class="tiny">Youth reached</span></div>
+            <div class="pill"><strong>50+</strong><br><span class="tiny">Community drives</span></div>
+            <div class="pill"><strong>Daily</strong><br><span class="tiny">Daily teach</span></div>
+          </div>
+        </div>
+
+        <!-- BIG logo back on the side (single logo overall) -->
+        <div style="display:flex;align-items:center;justify-content:center;">
+          <img id="bigLogo" src="https://i.ibb.co/7dzqtBgt/iyr-logo.jpg" alt="IYR logo" style="width:220px;max-width:80%;border-radius:12px;box-shadow:0 14px 40px rgba(0,0,0,.55);">
+        </div>
       </div>
-      <div class="grid">
-        <div class="card">
-          <h3>Vision</h3>
-          <p class="muted">An India where every young person practices responsibility, empathy and courage to create positive change.</p>
+    </section>
+
+    <!-- LATEST (vertical list, latest-first) -->
+    <section id="latest">
+      <div class="container">
+        <div class="sec-head fade-up">
+          <h2 class="h2">Latest Updates</h2>
+          <p class="tiny">Important notices & resources — read vertically on phone.</p>
         </div>
-        <div class="card">
-          <h3>Mission</h3>
-          <p class="muted">Inspire and empower youth through motivation, education support, skill-building, community development, daily Deen & humanity values, and research on human behaviour.</p>
-        </div>
-        <div class="card">
-          <h3>Values</h3>
-          <p class="muted">Integrity • Service • Knowledge • Unity • Consistency.</p>
+
+        <div class="card latest-wrap fade-up">
+          <div class="latest-vertical" id="latestList" aria-live="polite">
+            <!-- Latest first: 01 Nov 2025 -->
+
+              <!-- 21 Oct 2025 -->
+            <div class="latest-card" data-date="2025-11-04">
+              <div class="latest-date">04 Nov<br><strong>2025</strong></div>
+              <div class="latest-body">
+                <h3 class="latest-title">Visit our Student Website</h3>
+                <div class="latest-desc">You can get free books, free resources to study and more. <a id="studentsLinkInline" href="#">Visit</a></div>
+                <div style="margin-top:8px"><a class="btn" id="studentsVisitBtn" href="#">Visit Student Site</a></div>
+              </div>
+            </div>
+
+
+            <div class="latest-card" data-date="2025-11-01">
+              <div class="latest-date">01 Nov<br><strong>2025</strong></div>
+              <div class="latest-body">
+                <h3 class="latest-title">Our Book Released</h3>
+                <div class="latest-desc">"The Hidden Principle of Human Nature" — <a id="bookInlineLink" href="#">Visit</a></div>
+                <div style="margin-top:8px"><a class="btn link" id="bookVisitBtn" href="#">Open Book Link</a></div>
+              </div>
+            </div>
+
+            <!-- 30 Oct 2025 -->
+            <div class="latest-card" data-date="2025-10-30">
+              <div class="latest-date">30 Oct<br><strong>2025</strong></div>
+              <div class="latest-body">
+                <h3 class="latest-title">IYR Website Updated</h3>
+                <div class="latest-desc">Now you can check your membership status. Visit the members section for details.</div>
+              </div>
+            </div>
+
+            <!-- 28 Oct 2025 -->
+            <div class="latest-card" data-date="2025-10-28">
+              <div class="latest-date">28 Oct<br><strong>2025</strong></div>
+              <div class="latest-body">
+                <h3 class="latest-title">Notice: History of IYR</h3>
+                <div class="latest-desc">Details on how IYR started. <a id="historyInlineLink" href="#">Visit</a></div>
+                <div style="margin-top:8px"><a class="btn link" id="historyVisitBtn" href="#">Open History Link</a></div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="sec-head fade-up">
+          <h2 class="h2">About I.Y.R</h2>
+          <p class="tiny">Vision • Mission • Values</p>
+        </div>
+
+        <div class="grid-columns-3 fade-up" id="aboutCards">
+          <div class="card about-card" tabindex="0"><h3>Vision</h3><p class="tiny">An India where every young person practices responsibility and empathy to create positive change.</p></div>
+          <div class="card about-card" tabindex="0"><h3>Mission</h3><p class="tiny">Inspire and empower youth through motivation, education support, skill-building and community initiatives.</p></div>
+          <div class="card about-card" tabindex="0"><h3>Values</h3><p class="tiny">Integrity • Service • Knowledge • Unity • Consistency.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORY (auto show on load with stagger) -->
+    <section id="history">
+      <div class="container">
+        <div class="sec-head fade-up"><h2 class="h2">📜 Our Journey</h2><a class="btn link" id="downloadHistory" href="#">📥 Download Profile (PDF)</a></div>
+        <div class="timeline fade-up" id="timeline">
+          <div class="t-item history-item" data-order="1"><div class="t-dot">2024</div><div class="card"><strong>💡 Idea Spark</strong><p class="tiny">it was in January 2024 that Yusuf’s vision took shape—Indian Youth Revolution, a movement born from purpose, aiming to ignite the spirit of change in India’s youth through knowledge, action, and unity..</p></div></div>
+          <div class="t-item history-item" data-order="2"><div class="t-dot">2024</div><div class="card"><strong>🤝 Foundation</strong><p class="tiny">On 12th March 2024, Yusuf Khan officially founded IYR with the joining of members, unveiling of the name, and launch of the logo.</p></div></div>
+          <div class="t-item history-item" data-order="3"><div class="t-dot">2024</div><div class="card"><strong>📖 Daily Thought</strong><p class="tiny">Daily messages on values and humanity.</p></div></div>
+          <div class="t-item history-item" data-order="4"><div class="t-dot">2025</div><div class="card"><strong>🚀 Programs Expand</strong><p class="tiny">Launched full-scale youth empowerment: inspiration, skill workshops, clean-up drives, and leadership training — IYR became a movement..</p></div></div>
+        </div>
+      </div>
+    </section>
+
+<!-- FOUNDER (fixed: image won't get cut) -->
+<section id="founder">
+  <div class="container fade-up">
+    <div class="founder-box">
+
+      <!-- Image wrapper keeps square space but uses object-fit:contain so image isn't cropped -->
+      <div class="founder-img">
+        <img src="https://ik.imagekit.io/yusukhan/indian%20youth%20revolution/WhatsApp%20Image%202025-09-02%20at%2022.07.26_183894c7.jpg?updatedAt=1757754686680" 
+             alt="Yusuf Khan">
+      </div>
+
+      <!-- Content -->
+      <div class="founder-content">
+        <h2>Yusuf Khan</h2>
+        <p class="tiny" style="opacity:0.85;margin-top:-4px;">Founder, Indian Youth Revolution</p>
+
+        <button id="toggleFounder" class="btn secondary" style="margin:12px 0;">View Details</button>
+
+        <div id="founderInfo" class="founder-info">
+          <p class="tiny">
+            Yusuf Khan, the visionary Founder of Indian Youth Revolution (IYR), is a young changemaker from Kolkata, West Bengal, dedicated to inspiring and empowering the youth of India.
+            <br><br>
+            • Motivation & Awareness — building self-belief & moral values  
+            • Community Development — charity & social activities  
+            • Education Support — guidance & skill-building  
+            • Islamic & Humanitarian Teachings — unity & compassion  
+            • Research & Innovation — his own book “Hidden Principle…”
+            <br><br>
+            Yusuf is also a creative UI/UX designer, digital educator, and youth leader shaping a better India.
+          </p>
+        </div>
+      </div>
+
     </div>
- <section id="history" class="history-section">
-  <div class="container">
-    <div class="sec-head">
-      <h2 class="h2">📜 Our Journey</h2>
-      <a class="btn link" href="#" id="downloadHistory">📥 Download Profile (PDF)</a>
-    </div>
-
-    <div class="timeline">
-      <div class="t-item">
-        <div class="t-dot">2024</div>
-        <div class="card">
-          <strong>💡 Idea Spark</strong>
-          <p class="muted">it was in January 2024 that Yusuf’s vision took shape—Indian Youth Revolution, a movement born from purpose, aiming to ignite the spirit of change in India’s youth through knowledge, action, and unity.</p>
-        </div>
-      </div>
-
-      <div class="t-item">
-        <div class="t-dot">2024</div>
-        <div class="card">
-          <strong>🤝 Foundation</strong>
-          <p class="muted">On 12th March 2024, Yusuf Khan officially founded IYR with the joining of members, unveiling of the name, and launch of the logo.</p>
-        </div>
-        
-      </div>
-      
-
-      <div class="t-item">
-        <div class="t-dot">2024</div>
-        <div class="card">
-          <strong>📖 Daily Thaught & Values</strong>
-          <p class="muted">We share daily thaught & values </p>
-        </div>
-
-      </div>
-
-      <div class="t-item">
-        <div class="t-dot">2025</div>
-        <div class="card">
-          <strong>🚀 IYR Programs Expand</strong>
-          <p class="muted">Launched full-scale youth empowerment: inspiration, skill workshops, clean-up drives, and leadership training — IYR became a movement.</p>
-        </div>
-        
-      </div>
-      
+  </div>
 </section>
-<!-- Founder Transparent Box -->
-<div style="display:flex; justify-content:space-between; align-items:flex-start; border:2px solid #6a0dad; border-radius:10px; padding:20px; max-width:800px; margin:20px auto; background-color:rgba(0,0,0,0); gap:20px;">
-  
-  <!-- Details Left -->
-  <div style="flex:1;">
-    <h2 style="color:white;">Founder Details</h2>
-    <p style="color:rgba(255, 255, 255, 0.67);">Yusuf Khan is the founder of Indian Youth Revolution (IYR).</p>
-    <button onclick="toggleFounderInfo()" style="padding:10px 15px; background-color:purple; color:white; border:none; border-radius:5px; cursor:pointer;">View Details</button>
 
-    <!-- Hidden Info -->
-    <div id="founderInfo" style="display:none; margin-top:15px; border:1px solid #6a0dad; border-radius:8px; padding:15px; background-color:rgba(255, 255, 255, 0); color:rgba(255, 255, 255, 0.601);">
-      <p>Yusuf Khan empowers youth, runs charitable projects, conducts research on human nature, and inspires positive change in society through IYR.</p>
-    </div>
-  </div>
-
-  <!-- Photo Right -->
-<div style="text-align:center; flex-shrink:0;">
-  <img src="https://ik.imagekit.io/yusukhan/indian%20youth%20revolution/WhatsApp%20Image%202025-09-02%20at%2022.07.26_183894c7.jpg?updatedAt=1757754686680 alt="Yusuf Khan" style="margin-top:10px; width:160px; height:160px; object-fit:cover;">
-  <p style="margin-top:10px; font-weight:bold; color:white; font-size:18px;">Yusuf Khan</p>
-</div>
-
-</div>
-
-<!-- JS Script -->
-<script>
-function toggleFounderInfo() {
-  const info = document.getElementById('founderInfo');
-  info.style.display = info.style.display === "block" ? "none" : "block";
+<style>
+/* Container box */
+.founder-box {
+  display:flex;
+  gap:18px;
+  border:2px solid #6a0dad;
+  padding:18px;
+  border-radius:12px;
+  background:rgba(0,0,0,0.35);
+  align-items:center;
 }
-</script>
-    </div>
-  </section>  <!-- Programs -->  <section id="programs">
-    <div class="container">
-      <div class="sec-head">
-        <h2 class="h2">Key Programs</h2>
-        <p class="muted">What we run across communities</p>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h3>Motivation & Mentoring</h3>
-          <p class="muted">Talks, peer circles, and consistent guidance to build discipline and purpose.</p>
-        </div>
-        <div class="card">
-          <h3>Education & Scholarships</h3>
-          <p class="muted">Resources and support for students who need financial and academic help.</p>
-        </div>
-        <div class="card">
-          <h3>Community Development</h3>
-          <p class="muted">Clean‑up drives, health awareness, and neighbourhood initiatives with youth leadership.</p>
-        </div>
-        <div class="card">
-          <h3>Skill‑Building</h3>
-          <p class="muted">Design, video editing, coding basics, and career readiness workshops.</p>
-        </div>
-        <div class="card">
-          <h3>Humanity Messages</h3>
-          <p class="muted">Daily reminders on universal ethics for a better self.</p>
-        </div>
-        <div class="card">
-          <h3>Research on Human Nature</h3>
-          <p class="muted">Projects exploring behaviour and brain basics to improve learning & growth.</p>
-        </div>
-      </div>
-    </div>
-  </section>  <!-- Current Work / Updates -->  <section id="work">
-    <div class="container">
-      <div class="sec-head">
-        <h2 class="h2">Current Work & Updates</h2>
-        <a class="btn link" href="#" id="allUpdates">View all updates</a>
-      </div>
-      <div class="grid two">
-        <article class="card">
-          <h3>Monthly Youth Meetups</h3>
-          <p class="muted">City meetups for study support, motivation, and planning of micro‑projects.</p>
-        </article>
-        <article class="card">
-          <h3>Scholarship Drive</h3>
-          <p class="muted">Raising small funds and essentials for students appearing in board exams.</p>
-        </article>
-        <article class="card">
-          <h3>Clean‑Up & Awareness</h3>
-          <p class="muted">Neighbourhood cleanliness + plastic awareness with local volunteers.</p>
-        </article>
-        <article class="card">
-          <h3>Daily Messages</h3>
-          <p class="muted">Short posts on values and Deen across WhatsApp/Instagram/Youtube channels.</p>
-        </article>
-       
-          <article class="card">
-  <h3>Updates</h3>
-  <p class="muted">Latest update on our website</p>
 
-  <!-- Button to Show Album -->
-  <button onclick="toggleAlbum()" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">
-    📸 Show Album
-  </button>
+/* Image wrapper: keeps square area but doesn't crop the image */
+.founder-img {
+  width:160px;
+  max-width:38vw;
+  aspect-ratio:1/1;            /* modern browsers keep a square */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border-radius:10px;
+  border:3px solid rgba(106,13,173,0.9);
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.15));
+  padding:6px;
+}
 
-  <!-- Hidden Album Section -->
-  <div id="albumSection" style="display: none; margin-top: 20px;">
+/* Image: scale down, keep aspect ratio, DO NOT crop */
+.founder-img img {
+  max-width:100%;
+  max-height:100%;
+  width:auto;
+  height:auto;
+  object-fit:contain;   /* <-- prevents cropping */
+  display:block;
+  border-radius:6px;
+}
 
-     <h4>🎥 Video Gallery</h4>
+/* Content area flexible */
+.founder-content {
+  flex:1;
+  min-width:200px;
+}
 
-<!-- Responsive 16:9 YouTube Video -->
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px; border-radius: 10px;">
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-  <iframe
-    src="https://www.youtube.com/embed/TXEtC7IvM58"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    style="position:absolute;top:0;left:0;width:100%;height:100%;">
-  </iframe>
-    <h4>📷 Photo Gallery</h4>
-    <div style="display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px;">
-      <img src="https://i.ibb.co/20FPK5DQ/iyr-book.jpg" alt="Photo 1" style="width: 200px; border-radius: 8px;">
-      <img src="photo2.jpg" alt="Photo 2" style="width: 200px; border-radius: 8px;">
-      <img src="photo3.jpg" alt="Photo 3" style="width: 200px; border-radius: 8px;">
-      <img src="photo4.jpg" alt="Photo 4" style="width: 200px; border-radius: 8px;">
-      <!-- Add more <img> tags as needed -->
-    </div>
+/* Animated collapse for details (use max-height trick) */
+.founder-info {
+  max-height:0;
+  overflow:hidden;
+  transition: max-height 0.45s ease;
+  margin-top:6px;
+}
 
-</div>
-
-</div>
-
-  </div>
-</article>
+/* Responsive: on small screens stack vertically */
+@media (max-width:650px) {
+  .founder-box {
+    flex-direction:column;
+    text-align:center;
+  }
+  .founder-info {
+    text-align:left;
+    width:100%;
+  }
+  .founder-img {
+    width:42vw;
+    max-width:180px;
+  }
+}
+</style>
 
 <script>
-  function toggleAlbum() {
-    const album = document.getElementById("albumSection");
-    album.style.display = album.style.display === "none" ? "block" : "none";
+const toggleBtn = document.getElementById("toggleFounder");
+const founderInfo = document.getElementById("founderInfo");
+
+toggleBtn.addEventListener("click", function () {
+  if (founderInfo.style.maxHeight && founderInfo.style.maxHeight !== "0px") {
+    founderInfo.style.maxHeight = "0px";
+    toggleBtn.textContent = "View Details";
+  } else {
+    // set to scrollHeight to allow transition to natural height
+    founderInfo.style.maxHeight = founderInfo.scrollHeight + "px";
+    toggleBtn.textContent = "Hide Details";
   }
+});
+
+// optional: ensure collapsed height recalculates on window resize
+window.addEventListener('resize', () => {
+  if (founderInfo.style.maxHeight && founderInfo.style.maxHeight !== "0px") {
+    founderInfo.style.maxHeight = founderInfo.scrollHeight + "px";
+  }
+});
 </script>
 
-<!-- JavaScript to Toggle Album -->
-<script>
-  function toggleAlbum() {
-    const album = document.getElementById("albumSection");
-    album.style.display = album.style.display === "none" ? "block" : "none";
-  }
-</script>
+    </section>
 
+    <!-- PROGRAMS -->
+    <section id="programs">
+      <div class="container">
+        <div class="sec-head fade-up"><h2 class="h2">Key Programs</h2><p class="tiny">Swipe to explore — works well on phone.</p></div>
 
-<article class="card">
-  <h3>Membership Status</h3>
-  <p class="muted">If you are member than check your status through unique 5 digit id</p>
-  <button id="openStatusBtn" class="btn">Check Member Status</button>
-
-  <div id="statusPopup" style="display:none; margin-top:10px; border:1px solid #ccc; padding:10px; border-radius:8px;">
-    <input id="memberInput" type="text" placeholder="Enter your Unique ID (e.g. m-001)" style="padding:6px; border-radius:4px; border:1px solid #ccc;">
-    <button id="checkBtn" class="btn" style="margin-left:5px;">Check</button>
-    <div id="statusResult" style="margin-top:10px; font-size:14px;"></div>
-  </div>
-
-  <script>
-    const MEMBERS = [
-      {id: 'IYRY15', name: 'YUSUF KHAN', phone: '9330395465', email: 'yusufkhanyk7310@gmail.com'},
-      {id: 'IYRS71', name: 'SARIQ SADAB', phone: '7596****70', email: 'sariqsadab35@gmail.com'},
-      {id: 'IYRB71', name: 'BASHART MUSTAFA', phone: '8481****72', email: 'bmustafakgn@gmail.com'},
-      {id: 'IYRT75', name: 'TANVEER KHAN', phone: '6291****50', email: 'tanveerkhan0456@gmail.com'},
-      {id: 'IYRT80', name: 'TAMMIM UMMAR', phone: '6291****80', email: 'tammemumar@gmail.com'},
-      {id: 'IYRN25', name: 'NAYMAT JAHAN', phone: '9836****34', email: 'anjumsitara21@gmail.com'},
-      {id: 'IYRY23', name: 'YADAV SHARMA', phone: '7319****49', email: 'xarmayadav@gmail.com           '},
-      {id: 'm-008', name: 'Member 8', phone: '9000000008', email: 'm8@example.com'},
-      {id: 'm-009', name: 'Member 9', phone: '9000000009', email: 'm9@example.com'},
-      {id: 'm-010', name: 'Member 10', phone: '9000000010', email: 'm10@example.com'}
-    ];
-
-    const STORAGE_PREFIX = 'iyr_member_status_';
-
-    function loadStatus(id) {
-      const raw = localStorage.getItem(STORAGE_PREFIX + id);
-      if (!raw) return {active: false};
-      try { return JSON.parse(raw); } catch(e) { return {active:false}; }
-    }
-
-    document.getElementById('openStatusBtn').addEventListener('click', () => {
-      const popup = document.getElementById('statusPopup');
-      popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
-    });
-
-    document.getElementById('checkBtn').addEventListener('click', () => {
-      const id = document.getElementById('memberInput').value.trim().toLowerCase();
-      const resultDiv = document.getElementById('statusResult');
-      const member = MEMBERS.find(m => m.id.toLowerCase() === id);
-      if (!member) {
-        resultDiv.innerHTML = `<span style="color:red;">No member found for ID: ${id}</span>`;
-        return;
-      }
-      const status = loadStatus(member.id);
-      resultDiv.innerHTML = `
-        <div><strong>${member.name}</strong> (${member.id})</div>
-        <div>📞 ${member.phone}</div>
-        <div>✉️ ${member.email}</div>
-        <div style="margin-top:5px;">Status: 
-          <span style="color:${status.active ? 'green':'green'}; font-weight:600;">
-            ${status.active ? 'Active':'ACTIVE'}
-          </span>
+        <div class="programs-row fade-up" id="programsRow">
+          <div class="program-card"><h3>WB Students</h3><p class="tiny">Visit our students site for latest student updates and resources.</p><div style="margin-top:10px"><a id="wbStudentsBtn" class="btn" href="#">Visit WB Students</a></div></div>
+          <div class="program-card"><h3>Motivation & Mentoring</h3><p class="tiny">Talks, peer circles, guidance.</p></div>
+          <div class="program-card"><h3>Education & Scholarships</h3><p class="tiny">Support for students.</p></div>
+          <div class="program-card"><h3>Community Development</h3><p class="tiny">Clean-up drives & awareness.</p></div>
+          <div class="program-card"><h3>Skill-Building</h3><p class="tiny">Design, editing, coding basics.</p></div>
+          <div class="program-card"><h3>Humanity Messages</h3><p class="tiny">Daily reminders.</p></div>
+          <div class="program-card"><h3>Research</h3><p class="tiny">Behaviour & learning studies.</p></div>
         </div>
-      `;
-    });
-  </script>
-</article>
-
-        </article>
-        
-       
-        
-
       </div>
-    </div>
-  </section>  <!-- Shop / Cup Order -->  <section id="shop">
-    <div class="container">
-      <div class="sec-head">
-        <h2 class="h2">Shop — Support the Mission</h2>
-        <p class="muted">Official IYR merchandise</p>
-      </div>
-     <div class="scroll-container" style="display:flex;overflow-x:auto;gap:24px;padding:16px;">
-  
- <div class="scroll-container" style="display:flex;overflow-x:auto;gap:24px;padding:16px;scroll-snap-type:x mandatory;">
+    </section>
 
-  <!-- IYR Cup -->
-  <div class="card" style="min-width:300px;scroll-snap-align:start;display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center;border:1px solid #ccc;border-radius:12px;padding:12px;">
-    <img src="https://i.ibb.co/LXZ7LtRZ/Whats-App-Image-2025-10-22-at-21-36-09-1f20dbe2.jpg " alt="IYR Cup" style="width:100px;height:auto;border-radius:12px;">
-    <div>
-      <h3>IYR Cup</h3>
-      <p style="color:gray;">Minimal cup with the IYR emblem. Supports youth programs.</p>
-      <span class="price">₹199</span><br>
-      <button style="margin-top:8px;padding:6px 12px;border:none;background:#0078D4;color:white;border-radius:6px;">Order Now</button>
-    </div>
-  </div>
+    <!-- WORK (album hidden) -->
+    <section id="work">
+      <div class="container">
+        <div class="sec-head fade-up"><h2 class="h2">Current Work & Updates</h2><a class="btn link" href="#">View all</a></div>
+        <div class="card fade-up">
+          <h3>Updates</h3>
+          <p class="tiny">Click the album button to view photos & featured video (hidden by default).</p>
+          <div style="margin-top:12px">
+            <button id="albumBtn" class="btn">📸 Open Album</button>
+            <div id="albumSection" style="display:none;margin-top:12px">
+              <div class="card" style="padding:12px">
+                <h4>🎥 Featured Video</h4>
+                <div class="video-wrap" style="margin-top:8px">
+                  <iframe id="featuredVideo" src="https://www.youtube.com/embed/TXEtC7IvM58?rel=0&modestbranding=1&playsinline=1" title="IYR Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <div class="video-overlay" id="videoOverlay"><button id="playVideoBtn" class="play-pill">▶ Play Video</button></div>
+                </div>
 
-  <!-- IYR T-Shirt -->
-  <div class="card" style="min-width:300px;scroll-snap-align:start;display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center;border:1px solid #ccc;border-radius:12px;padding:12px;">
-    <img src="https://i.ibb.co/Cs9vRbG1/Whats-App-Image-2025-10-22-at-21-36-08-9180c1af.jpg" alt="IYR T-Shirt" style="width:100px;height:auto;border-radius:12px;">
-    <div>
-      <h3>IYR T-Shirt</h3>
-      <p style="color:gray;">Soft cotton tee with IYR logo. Great for youth events.</p>
-      <span class="price">₹349</span><br>
-      <button style="margin-top:8px;padding:6px 12px;border:none;background:#0078D4;color:white;border-radius:6px;">Order Now</button>
-    </div>
-  </div>
-
-  <!-- IYR Pillow -->
-  <div class="card" style="min-width:300px;scroll-snap-align:start;display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center;border:1px solid #ccc;border-radius:12px;padding:12px;">
-    <img src="https://i.ibb.co/QF6dpcyG/Whats-App-Image-2025-10-22-at-21-36-07-2ff5d804.jpg" alt="IYR Pillow" style="width:100px;height:auto;border-radius:12px;">
-    <div>
-      <h3>IYR Pillow</h3>
-      <p style="color:gray;">Comfy pillow with embroidered IYR emblem. Perfect for chill vibes.</p>
-      <span class="price">₹299</span><br>
-      <button style="margin-top:8px;padding:6px 12px;border:none;background:#0078D4;color:white;border-radius:6px;">Order Now</button>
-    </div>
-  </div>
-
-</div>
-
-</div>
-              <a id="orderCupBtn" class="btn" href="#" target="_blank" rel="noopener">Order Cup</a>
-              <a class="btn secondary" href="#contact">Ask on WhatsApp</a>
+                <h4 style="margin-top:12px">📷 Photo Gallery</h4>
+                <div style="display:flex;overflow-x:auto;gap:10px;padding:8px">
+                  <img src="https://i.ibb.co/20FPK5DQ/iyr-book.jpg" alt="photo1" style="width:200px;border-radius:8px">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-<!-- Connect with IYR -->
-<section id="connect">
-  <div class="container">
-    <div class="sec-head" style="text-align:center;margin-bottom:32px;">
-      <h2 class="h2">Connect with IYR</h2>
-      <p class="muted">Follow, message, collaborate</p>
-    </div>
+    </section>
 
-    <div class="grid two" 
-         style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-                gap:24px;justify-content:center;align-items:stretch;
-                padding:16px;max-width:900px;margin:auto;">
-      
-      <!-- Social Profiles -->
-      <div class="card" 
-           style="border:1px solid #ccc;border-radius:12px;padding:20px;
-                  display:flex;flex-direction:column;justify-content:center;">
-        <h3 style="margin-bottom:12px;">Social Profiles</h3>
-        <div class="socials" style="display:flex;flex-direction:column;gap:10px;">
-          <a class="icon-btn" id="igLink" 
-             href="https://www.instagram.com/indianyouthrevolution/" 
-             target="_blank" rel="noopener"
-             style="display:flex;align-items:center;gap:8px;color:#2dd4bf;text-decoration:none;">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/></svg>
-            Instagram
-          </a>
-          <a class="icon-btn" id="fbLink" href="https://facebook.com/iyr.india" target="_blank" rel="noopener"
-             style="display:flex;align-items:center;gap:8px;color:#2dd4bf;text-decoration:none;">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M13 22V12h3l1-4h-4V6.5A1.5 1.5 0 0114.5 5H17V1h-3a5 5 0 00-5 5v2H6v4h3v10h4z"/></svg>
-            Facebook
-          </a>
-          <a class="icon-btn" id="ytLink" href="https://www.youtube.com/@IndianYouthRevolution" target="_blank" rel="noopener"
-             style="display:flex;align-items:center;gap:8px;color:#2dd4bf;text-decoration:none;">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M23 7.5a3 3 0 00-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 001 7.5 31 31 0 000 12a31 31 0 001 4.5 3 3 0 002.1 2.1C5 19 12 19 12 19s7 0 8.9-.4A3 3 0 0023 16.5 31 31 0 0024 12a31 31 0 00-1-4.5zM10 15.5V8.5L16 12l-6 3.5z"/></svg>
-            YouTube
-          </a>
-          <a class="icon-btn" id="xLink" href="https://x.com" target="_blank" rel="noopener"
-             style="display:flex;align-items:center;gap:8px;color:#2dd4bf;text-decoration:none;">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M3 3h4.7l4.2 6 5.8-6H21l-7.4 7.8L21 21h-4.7l-4.6-6.6L5.5 21H3l8-8.5L3 3z"/></svg>
-            X / Twitter
-          </a>
+    <!-- MEMBERS, SHOP, CONNECT, JOIN, FOOTER as before -->
+    <section id="members">
+      <div class="container">
+        <div class="sec-head fade-up"><h2 class="h2">Members</h2><p class="tiny">Click "Show Members" to reveal the list (admin only). Use the search to quickly check name & status.</p></div>
+        <div class="card fade-up">
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <button id="showMembersBtn" class="btn">Show Members (admin)</button>
+            <input id="memberSearch" type="text" placeholder="Search by ID or name (eg. IYRY15)" style="min-width:200px;padding:.5rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)">
+          </div>
+          <div id="memberSearchResult" style="margin-top:12px;color:var(--muted)"></div>
+          <div id="membersTableWrap" style="margin-top:12px;display:none">
+            <table class="members-table" id="membersTable">
+              <thead><tr><th>ID</th><th>Name</th><th>Phone</th><th>Email</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Contact -->
-      <div class="card" 
-           style="border:1px solid #ccc;border-radius:12px;padding:20px;
-                  display:flex;flex-direction:column;justify-content:center;">
-        <h3 style="margin-bottom:12px;">Contact</h3>
-        <p class="muted" style="margin-bottom:10px;">Questions, collaborations, volunteering or media? We’d love to hear from you.</p>
-        <p style="margin-bottom:12px;">
-          <strong>Email:</strong> 
-          <a id="emailLink" href="mailto:iyrindiaanyouthrevolution@gmail.com">iyrindiaanyouthrevolution@gmail.com</a><br>
-          <strong>WhatsApp:</strong> 
-          <a id="waLink" href="https://wa.me/9330395465" target="_blank" rel="noopener">Message us</a>
-        </p>
-        <div class="cta" style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap;">
-          <a class="btn" href="#join" aria-label="Join IYR" 
-             style="background:#2dd4bf;color:rgb(0, 0, 0);padding:8px 14px;border-radius:6px;text-decoration:none;">
-             Become a Member
-          </a>
-          <a class="btn secondary" href="#programs" 
-             style="border:1px solid #ffffff;color:#ffffff;padding:8px 14px;border-radius:6px;text-decoration:none;">
-             See Programs
-          </a>
+    <section id="shop">
+      <div class="container">
+        <div class="sec-head fade-up"><h2 class="h2">Shop — Support the Mission</h2><p class="tiny">Official IYR merchandise</p></div>
+        <div class="shop-row fade-up">
+          <div class="card shop-card">
+            <img src="https://i.ibb.co/LXZ7LtRZ/Whats-App-Image-2025-10-22-at-21-36-09-1f20dbe2.jpg" alt="IYR Cup" style="width:100%;border-radius:8px">
+            <div>
+              <strong>IYR Cup</strong>
+              <div class="tiny">Minimal cup with the IYR emblem.</div>
+              <div style="margin-top:6px;font-weight:800">₹199</div>
+              <div class="shop-actions">
+                <a class="btn" href="#" id="orderCupBtn">Order Now</a>
+                <a class="btn secondary" href="https://wa.me/919330395465" id="askCupWA" target="_blank">Ask on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shop-card">
+            <img src="https://i.ibb.co/Cs9vRbG1/Whats-App-Image-2025-10-22-at-21-36-08-9180c1af.jpg" alt="IYR T-Shirt" style="width:100%;border-radius:8px">
+            <div>
+              <strong>IYR T-Shirt</strong>
+              <div class="tiny">Soft cotton tee with IYR logo.</div>
+              <div style="margin-top:6px;font-weight:800">₹349</div>
+              <div class="shop-actions">
+                <a class="btn" href="#" id="orderTshirtBtn">Order Now</a>
+                <a class="btn secondary" href="https://wa.me/919330395465" id="askTshirtWA" target="_blank">Ask on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shop-card">
+            <img src="https://i.ibb.co/QF6dpcyG/Whats-App-Image-2025-10-22-at-21-36-07-2ff5d804.jpg" alt="IYR Pillow" style="width:100%;border-radius:8px">
+            <div>
+              <strong>IYR Pillow</strong>
+              <div class="tiny">Comfy pillow with embroidered IYR emblem.</div>
+              <div style="margin-top:6px;font-weight:800">₹299</div>
+              <div class="shop-actions">
+                <a class="btn" href="#" id="orderPillowBtn">Order Now</a>
+                <a class="btn secondary" href="https://wa.me/919330395465" id="askPillowWA" target="_blank">Ask on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
+
+    <section id="connect">
+      <div class="container">
+        <div class="sec-head fade-up"><h2 class="h2">Connect with IYR</h2><p class="tiny">Follow, message, collaborate</p></div>
+        <div class="grid-columns-2 fade-up" id="connectBlock">
+          <div class="card">
+            <h3>Social</h3>
+            <div class="social-bar" style="margin-top:8px">
+              <a class="social-btn" id="fbLink" href="https://facebook.com/iyr.india" target="_blank">Facebook</a>
+              <a class="social-btn" id="xLink" href="https://x.com" target="_blank">X / Twitter</a>
+              <a class="social-btn" id="threadsLink" href="https://www.threads.net" target="_blank">Threads</a>
+              <a class="social-btn" id="igLink" href="https://www.instagram.com/indianyouthrevolution/" target="_blank">Instagram</a>
+              <a class="social-btn" id="ytLink" href="https://www.youtube.com/@IndianYouthRevolution" target="_blank">YouTube</a>
+            </div>
+          </div>
+          <div class="card"><h3>Contact</h3><p class="tiny">Email: <a id="emailLink" href="mailto:iyrindiaanyouthrevolution@gmail.com">iyrindiaanyouthrevolution@gmail.com</a></p><div style="margin-top:8px"><button id="openStatusBtn" class="btn">Check Member Status</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join">
+      <div class="container">
+        <div class="sec-head fade-up" style="align-items:center"><h2 class="h2">Join the Movement</h2><p class="tiny">Every youth is a changemaker</p></div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:12px">
+          <div class="card pulse" style="min-width:240px" id="volCard">
+            <h3>Volunteer</h3>
+            <p class="tiny">Give your time to education support, campaigns, and events.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+              <a id="surveyBtn" class="btn secondary" href="https://surveyheart.com/form/65fa81b54995b15f6a94d087" target="_blank">Fill Up the Form</a>
+              <a id="volWa" class="btn" href="https://wa.me/919330395465" target="_blank">Join via WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="card" style="min-width:240px">
+            <h3>Partner / Sponsor</h3>
+            <p class="tiny">Support scholarships, workshops, or community projects.</p>
+            <a class="btn link" href="mailto:iyrindiaanyouthrevolution@gmail.com">Write to Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="padding:18px 0;border-top:1px solid rgba(255,255,255,0.04)">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div>© <span id="year"></span> Indian Youth Revolution • All rights reserved</div>
+      <div class="tiny" style="color:var(--muted)">Built by YUSUF</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a id="waFloat" class="wa-float" href="https://wa.me/919330395465" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+  <!-- Member status modal -->
+  <div id="statusPopup" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2500;background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);min-width:280px;">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <strong>Check Member Status</strong>
+      <button id="closeStatus" class="btn secondary" style="padding:.25rem .5rem">Close</button>
+    </div>
+    <div style="margin-top:10px">
+      <input id="memberInput" type="text" placeholder="Enter Unique ID (e.g. IYRY15)" style="width:100%;padding:.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)">
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button id="checkBtn" class="btn">Check</button>
+      </div>
+      <div id="statusResult" style="margin-top:10px;color:var(--muted)"></div>
     </div>
   </div>
-</section>
 
-  </section>  <!-- Join -->  <section id="join">
-
-  <div class="container">
-  <div class="sec-head" style="text-align:center; margin-bottom:30px;">
-    <h2 style="color:white;">Join the Movement</h2>
-    <p style="color:rgba(255,255,255,0.8);">Every youth is a changemaker</p>
-  </div>
-
-  <div class="grid two" style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
-    
-    <!-- Volunteer Box -->
-    <div class="card" style="flex:1; min-width:280px; border:1px solid hwb(0 74% 20% / 0.5); border-radius:10px; padding:20px; background-color:rgba#e8f0ff; display:flex; flex-direction:column; gap:15px;">
-      <h3 style="color:white;">Volunteer</h3>
-      <p style="color:rgba(255,255,255,0.8);">Give your time to education support, campaigns, and events. Learn leadership hands‑on.</p>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-       <a href="https://wa.me/919330395465" target="_blank" style="flex:1; text-align:center; padding:12px; border-radius:8px; text-decoration:none; color:rgb(0, 0, 0); background-color:#2dd4bf; font-weight:bold;">
-  Join on WhatsApp
-</a>
-        <a href="https://surveyheart.com/form/65fa81b54995b15f6a94d087" target="_blank" style="flex:1; text-align:center; padding:12px; border-radius:8px; text-decoration:none; color:white; background-color:#b266ff;">Fill Up the Form</a>
-      </div>
-    </div>
-
-    <!-- Partner/Sponsor Box -->
-    <div class="card" style="flex:1; min-width:280px; border:1px solid rgba(255,255,255,0.5); border-radius:10px; padding:20px; background-color:rgba#e8f0ff; display:flex; flex-direction:column; gap:15px;">
-      <h3 style="color:white;">Partner / Sponsor</h3>
-      <p style="color:rgba(255,255,255,0.8);">Support scholarships, workshops, or community projects. We keep it transparent and impact‑focused.</p>
-      <a href="mailto:iyrindiaanyouthrevolution@gmail.com" style="text-align:center; padding:12px; border-radius:8px; text-decoration:none; color:white; border:1px solid rgba(255,255,255,0.5);">Write to Us</a>
-    </div>
-
-  </div>
-</div>
-
-<style>
-/* Responsive: mobile stack boxes & buttons */
-@media screen and (max-width: 600px){
-  .grid.two {
-    flex-direction: column;
-  }
-  .card div[style*="display:flex"] {
-    flex-direction: column !important;
-  }
-}
-</style>
-  </section>  <footer>
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
-      <div>
-        © <span id="year"></span> Indian Youth Revolution • All rights reserved
-      </div>
-      <div class="socials">
-        <a class="icon-btn" href="#about">About</a>
-        <a class="icon-btn" href="#history">History</a>
-        <a class="icon-btn" href="#work">Work</a>
-        <a class="icon-btn" href="#contact">Contact</a>
-      </div>
-    </div>
- <!-- Floating WhatsApp Button -->
-<a class="wa-float" id="waFloat" 
-   href="https://wa.me/9330395465" 
-   target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2a10 10 0 00-8.66 15l-1.1 4 4.12-1.08A10 10 0 1012 2zm5.55 14.21c-.24.67-1.4 1.27-1.95 1.31-.5.03-1.12.05-1.8-.11a8 8 0 01-3.51-1.95 9.62 9.62 0 01-2.26-2.89c-.24-.46-.5-1.22-.05-1.89.34-.5.75-1.13 1.24-1.16.32-.02.64.02.93.39.24.31.75 1.02.82 1.1.13.17.19.36.06.59-.26.5-.55.72-.83 1.06-.2.23-.43.48-.18.9.26.44 1.16 1.9 2.49 2.6.9.49 1.26.53 1.72.45.47-.08 1.12-.51 1.39-.99.21-.36.47-.3.79-.18.34.12 2.14 1.01 2.22 1.19.07.2.07.78-.08 1.06z"/>
-  </svg>
-  WhatsApp
-</a>
-
-<style>
-.wa-float {
-  position: fixed;
-  bottom: 20px;
-  right: 120px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50px;
-  padding: 12px 18px;
-  font-weight: bold;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-  z-index: 1000;
-}
-
-.wa-float:hover {
-  transform: scale(1.05);
-}
-
-.wa-float .icon {
-  width: 24px;
-  height: 24px;
-}
-
-/* ✅ Mobile screen fix */
-@media (max-width: 600px) {
-  .wa-float {
-    bottom: 15px;
-    right: 15px;
-    padding: 10px 14px;
-    font-size: 14px;
-  } 
-  .wa-float .icon {
-    width: 20px;
-    height: 20px;
-  }
-}
-</style>
-  </a>  <script>
-    // ---- QUICK SETUP ----
-    // Replace these with your real details. You can also set them via ?phone= & ?order= in the URL.
+  <script>
+    // CONFIG
     const CONFIG = {
-      phone: '9330395465', // WhatsApp number with country code (e.g., 919876543210)
-      orderCupLink: '#',   // Link you will provide later  
+      surveyForm: 'https://surveyheart.com/form/65fa81b54995b15f6a94d087',
+      studentsSite: 'https://indianyouthrevolution.github.io/wbstudents/',
       instagram: 'https://www.instagram.com/indianyouthrevolution/',
-      facebook: 'https://facebook.com/iyr.india',
       youtube: 'https://www.youtube.com/@IndianYouthRevolution',
-      twitter: 'https://x.com',
-      email: 'iyrindiaanyouthrevolution@gmail.com'
+      facebook: 'https://facebook.com/iyr.india',
+      x: 'https://x.com',
+      threads: 'https://www.threads.net',
+      email: 'iyrindiaanyouthrevolution@gmail.com',
+      adminPass: 'YUSUFKHAN7310',
+      // add your links here when available:
+      bookLink: '#', // <-- put The Hidden Principle book link here
+      historyLink: '#' // <-- put History of IYR details link here
     };
 
-    // Allow URL overrides like: ?phone=91999...&order=https://...
-    const params = new URLSearchParams(location.search);
-    if(params.get('9330395465')) CONFIG.phone = params.get('9330395465');
-    if(params.get('order')) CONFIG.orderCupLink = params.get('order');
+    // Apply links
+    document.getElementById('wbStudentsBtn')?.setAttribute('href', CONFIG.studentsSite);
+    document.getElementById('igLink')?.setAttribute('href', CONFIG.instagram);
+    document.getElementById('ytLink')?.setAttribute('href', CONFIG.youtube);
+    document.getElementById('fbLink')?.setAttribute('href', CONFIG.facebook);
+    document.getElementById('xLink')?.setAttribute('href', CONFIG.x);
+    document.getElementById('threadsLink')?.setAttribute('href', CONFIG.threads);
+    document.getElementById('emailLink')?.setAttribute('href', 'mailto:' + CONFIG.email);
+    document.getElementById('surveyBtn')?.setAttribute('href', CONFIG.surveyForm);
+    document.getElementById('studentsLinkInline')?.setAttribute('href', CONFIG.studentsSite);
+    document.getElementById('studentsVisitBtn')?.setAttribute('href', CONFIG.studentsSite);
+    document.getElementById('bookInlineLink')?.setAttribute('href', CONFIG.bookLink);
+    document.getElementById('bookVisitBtn')?.setAttribute('href', CONFIG.bookLink);
+    document.getElementById('historyInlineLink')?.setAttribute('href', CONFIG.historyLink);
+    document.getElementById('historyVisitBtn')?.setAttribute('href', CONFIG.historyLink);
 
-    // Apply config to links
-    const wa = https://wa.me/919330395465
-    ['waLink','joinWhatsApp','joinWhatsAppTop','waFloat'].forEach(id=>{
-      const el = document.getElementById(id); if(el) el.href = wa;
+    // Mobile overlay open/close (support touch on phones)
+    const hamburger = document.getElementById('hamburger');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const mobileClose = document.getElementById('mobileClose');
+    function openMobile(){ mobileOverlay.style.display = 'flex'; mobileOverlay.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+    function closeMobile(){ mobileOverlay.style.display = 'none'; mobileOverlay.setAttribute('aria-hidden','true'); document.body.style.overflow='auto'; }
+    hamburger?.addEventListener('click', openMobile);
+    // add touchstart for devices where click may be delayed
+    hamburger?.addEventListener('touchstart', function(e){ e.preventDefault(); openMobile(); }, {passive:false});
+    mobileClose?.addEventListener('click', closeMobile);
+    mobileClose?.addEventListener('touchstart', function(e){ e.preventDefault(); closeMobile(); }, {passive:false});
+    document.querySelectorAll('.mobile-overlay a').forEach(a=> a.addEventListener('click', ()=>{ closeMobile(); }));
+
+    // Smooth scroll for header Join Us
+    document.getElementById('joinUsHeader')?.addEventListener('click', function(e){ e.preventDefault(); document.querySelector('#join').scrollIntoView({behavior:'smooth'}); });
+
+    // Founder toggle
+    document.getElementById('toggleFounder')?.addEventListener('click', function(){ const el = document.getElementById('founderInfo'); el.classList.toggle('open'); if(el.classList.contains('open')) el.scrollIntoView({behavior:'smooth', block:'center'}); });
+
+    // Album toggle
+    document.getElementById('albumBtn')?.addEventListener('click', function(){ const alb = document.getElementById('albumSection'); alb.style.display = (alb.style.display === 'block') ? 'none' : 'block'; if(alb.style.display === 'block') alb.scrollIntoView({behavior:'smooth', block:'center'}); });
+
+    // Members (admin password check) and table rendering
+    const MEMBERS = [
+      {id:'IYRY15',name:'YUSUF KHAN',phone:'9330395465',email:'yusufkhanyk7310@gmail.com',status:'Active'},
+      {id:'IYRS71',name:'SARIQ SADAB',phone:'7596****70',email:'sariqsadab35@gmail.com',status:'Active'},
+      {id:'IYRB71',name:'BASHART MUSTAFA',phone:'8481****72',email:'bmustafakgn@gmail.com',status:'Active'},
+      {id:'IYRT75',name:'TANVEER KHAN',phone:'6291****50',email:'tanveerkhan0456@gmail.com',status:'Active'},
+      {id:'IYRT80',name:'TAMMIM UMMAR',phone:'6291****80',email:'tammemumar@gmail.com',status:'Active'},
+      {id:'IYRN25',name:'NAYMAT JAHAN',phone:'9836****34',email:'anjumsitara21@gmail.com',status:'Active'},
+      {id:'IYRY23',name:'YADAV SHARMA',phone:'7319****49',email:'xarmayadav@gmail.com',status:'Active'},
+      {id:'m-008',name:'Member 8',phone:'9000000008',email:'m8@example.com',status:'Inactive'},
+      {id:'m-009',name:'Member 9',phone:'9000000009',email:'m9@example.com',status:'Active'},
+      {id:'m-010',name:'Member 10',phone:'9000000010',email:'m10@example.com',status:'Active'}
+    ];
+
+    const showMembersBtn = document.getElementById('showMembersBtn');
+    const membersTableWrap = document.getElementById('membersTableWrap');
+    const membersTableBody = document.querySelector('#membersTable tbody');
+
+    showMembersBtn?.addEventListener('click', ()=>{
+      const pass = prompt('Enter admin password to view members:');
+      if(pass === CONFIG.adminPass){ if(membersTableWrap.style.display==='block'){ membersTableWrap.style.display='none'; showMembersBtn.textContent='Show Members (admin)'; } else { membersTableWrap.style.display='block'; showMembersBtn.textContent='Hide Members (admin)'; membersTableBody.innerHTML = MEMBERS.map(m=>`<tr><td>${m.id}</td><td>${m.name}</td><td>${m.phone}</td><td>${m.email}</td></tr>`).join(''); } }
+      else if(pass !== null){ alert('Incorrect password'); }
     });
 
+    // Member search (shows only name & status)
+    const memberSearch = document.getElementById('memberSearch');
+    const memberSearchResult = document.getElementById('memberSearchResult');
+    let searchTimeout;
+    memberSearch?.addEventListener('input', ()=>{
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(()=>{
+        const q = (memberSearch.value||'').trim().toLowerCase();
+        if(!q){ memberSearchResult.innerHTML = '' ; return; }
+        const found = MEMBERS.find(m => m.id.toLowerCase()===q || m.name.toLowerCase().includes(q));
+        if(!found){ memberSearchResult.innerHTML = `<div style="color:#ff7676">User not found</div>`; return; }
+        memberSearchResult.innerHTML = `<div><strong>${found.name}</strong> — <span style="font-weight:700;color:${found.status==='Active'?'#7CFC00':'#ff7676'}">${found.status}</span></div>`;
+      }, 250);
+    });
 
+    // Membership status modal simplified (button inside contact)
+    document.getElementById('openStatusBtn')?.addEventListener('click', ()=> document.getElementById('statusPopup').style.display='block');
+    document.getElementById('closeStatus')?.addEventListener('click', ()=> document.getElementById('statusPopup').style.display='none');
+    document.getElementById('checkBtn')?.addEventListener('click', ()=>{ const id=(document.getElementById('memberInput').value||'').trim().toLowerCase(); const res=document.getElementById('statusResult'); if(!id){ res.innerHTML='<span style="color:var(--muted)">Enter an ID</span>'; return; } const m=MEMBERS.find(x=>x.id.toLowerCase()===id); if(!m){ res.innerHTML=`<span style="color:#ff7676">User not found</span>`; return; } res.innerHTML=`<div><strong>${m.name}</strong></div><div style="margin-top:6px">Status: <strong style="color:${m.status==='Active'?'limegreen':'#ff7676'}">${m.status}</strong></div>`; });
 
+    // Intersection Observer for fade-up animations (entry on scroll)
+    const io = new IntersectionObserver((entries)=>{ entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in-view'); io.unobserve(en.target); } }); }, {threshold:0.12});
+    document.querySelectorAll('.fade-up').forEach(el=> io.observe(el));
 
+    // About cards: touch/click to animate (flip/scale). CSS also adds transform for .in-view
+    document.querySelectorAll('.about-card').forEach(card=>{
+      card.addEventListener('click', ()=>{ card.classList.toggle('in-view'); setTimeout(()=> card.classList.toggle('in-view'), 900); });
+      card.addEventListener('touchstart', ()=>{ card.classList.add('in-view'); });
+      card.addEventListener('touchend', ()=> setTimeout(()=> card.classList.remove('in-view'), 700));
+    });
 
+    // History: auto reveal on load with slight stagger (no click required)
+    document.addEventListener('DOMContentLoaded', ()=>{
+      const historyItems = Array.from(document.querySelectorAll('.history-item'));
+      historyItems.forEach((it, idx)=>{ setTimeout(()=> it.classList.add('in-view'), 300 + idx*250); });
 
-    const set = (id,url)=>{ const el=document.getElementById(id); if(el) el.href=url; };
-    set('orderCupBtn', CONFIG.orderCupLink);
-    set('igLink', CONFIG.instagram);
-    set('fbLink', CONFIG.facebook);
-    set('ytLink', CONFIG.youtube);
-    set('xLink', CONFIG.twitter);
-    set('iyrindiaanyouthrevolution@gmail.com', mailto:${CONFIG.iyrindianyouthrevolution@gmail.com});
-    set('iyrindiaanyouthrevolution@gmail.com', mailto:${CONFIG.email});
+      // initialize latest auto-vertical-scroll if more than 3 items
+      initLatestAutoScroll();
+    });
 
-    // Year
+    // Social buttons: touch handlers for mobile
+    document.querySelectorAll('.social-btn').forEach(btn=>{
+      btn.addEventListener('touchstart', ()=> btn.classList.add('pressed'));
+      btn.addEventListener('touchend', ()=> setTimeout(()=> btn.classList.remove('pressed'), 120));
+      btn.addEventListener('mousedown', ()=> btn.classList.add('pressed'));
+      btn.addEventListener('mouseup', ()=> setTimeout(()=> btn.classList.remove('pressed'), 120));
+      btn.addEventListener('mouseleave', ()=> btn.classList.remove('pressed'));
+    });
+
+    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
-  
 
-    // Optional: simple toast when user copies link (placeholder)
-    // (Add your own scripts if needed)
-  </script>  <!-- Structured Data (SEO) -->  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "NGO",
-    "name": "Indian Youth Revolution (I.Y.R)",
-    "url": "https://yourusername.github.io/",
-    "logo": "https://yourusername.github.io/iyr-logo.png",
-    "email": "iyrindiaanyouthrevolution@gmail.com",
-    "sameAs": [
-      "https://instagram.com/iyr.india",
-      "https://facebook.com/iyr.india",
-      "https://youtube.com"
-    ],
-    "description": "A youth-led movement inspiring responsibility, compassion and action through motivation, education, charity and daily values.",
-    "areaServed": "IN"
-  }
-  </script></body>
+    // Ensure latest list is sorted newest-first by data-date attribute (safety if content changes)
+    (function sortLatest(){
+      const list = document.getElementById('latestList');
+      if(!list) return;
+      const cards = Array.from(list.children);
+      cards.sort((a,b)=> (a.dataset.date < b.dataset.date) ? 1 : -1 );
+      cards.forEach(c=> list.appendChild(c));
+    })();
+
+    /* ---------- Latest vertical auto-scroll (pauses on hover/touch) ---------- */
+    let latestInterval;
+    function initLatestAutoScroll(){
+      const list = document.getElementById('latestList');
+      if(!list) return;
+      const items = list.children.length;
+      // auto-scroll only when more than 3 items (user requirement)
+      if(items <= 3) return;
+
+      let paused = false;
+      let scrollStep = 0;
+      let lastIndex = 0;
+
+      function recalc(){
+        // compute an approximate step: height of first card + gap (12px)
+        const first = list.firstElementChild;
+        if(first) scrollStep = first.getBoundingClientRect().height + 12;
+      }
+
+      recalc();
+      // recalc on resize to keep mobile friendly
+      window.addEventListener('resize', recalc);
+
+      function doScroll(){
+        if(paused) return;
+        const maxScrollTop = list.scrollHeight - list.clientHeight;
+        // if near bottom, smooth back to top
+        if(list.scrollTop >= maxScrollTop - 4){
+          list.scrollTo({ top: 0, behavior: 'smooth' });
+          lastIndex = 0;
+        } else {
+          list.scrollBy({ top: scrollStep, behavior: 'smooth' });
+          lastIndex++;
+        }
+      }
+
+      // start after a small delay to allow layout complete
+      latestInterval = setInterval(doScroll, 3000);
+
+      // pause on hover / touch
+      list.addEventListener('mouseenter', ()=> paused = true);
+      list.addEventListener('mouseleave', ()=> paused = false);
+      list.addEventListener('touchstart', ()=> paused = true, {passive:true});
+      list.addEventListener('touchend', ()=> { setTimeout(()=> paused = false, 300); }, {passive:true});
+
+      // allow manual scroll to reset interval timing
+      list.addEventListener('scroll', ()=>{ /* noop - user can manually scroll */ });
+
+      // cleanup on page unload
+      window.addEventListener('beforeunload', ()=>{ clearInterval(latestInterval); window.removeEventListener('resize', recalc); });
+    }
+
+    // initialize now if DOMContentLoaded already fired
+    if(document.readyState === 'complete' || document.readyState === 'interactive'){
+      // ensure small timeout to let layout settle
+      setTimeout(()=> initLatestAutoScroll(), 200);
+    } else {
+      document.addEventListener('DOMContentLoaded', initLatestAutoScroll);
+    }
+
+    // Video play overlay: make video play on click (autoplay param) and hide overlay
+    const playBtn = document.getElementById('playVideoBtn');
+    const videoOverlay = document.getElementById('videoOverlay');
+    const featuredVideo = document.getElementById('featuredVideo');
+    playBtn?.addEventListener('click', ()=>{
+      if(!featuredVideo) return;
+      // add autoplay to src (YouTube supports &autoplay=1)
+      let src = featuredVideo.getAttribute('src') || '';
+      if(!/autoplay=1/.test(src)){
+        src = src + (src.includes('?') ? '&autoplay=1' : '?autoplay=1');
+        featuredVideo.setAttribute('src', src);
+      }
+      if(videoOverlay) videoOverlay.style.display = 'none';
+    });
+
+    // Also allow tapping directly on overlay area to play
+    videoOverlay?.addEventListener('touchstart', ()=> playBtn.click(), {passive:true});
+
+    // Accessibility: allow Enter key on wbStudentsBtn and studentsVisitBtn
+    ['wbStudentsBtn','studentsVisitBtn','bookVisitBtn','historyVisitBtn'].forEach(id=>{
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.addEventListener('keydown', e=>{ if(e.key === 'Enter') el.click(); });
+    });
+
+    
+
+  </script>
+</body>
 </html>
-
-
-
-
-
-
 
 
 
