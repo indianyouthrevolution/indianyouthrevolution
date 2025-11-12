@@ -728,20 +728,26 @@ window.addEventListener('resize', () => {
       cards.forEach(c=> list.appendChild(c));
     })();
 
-  /* ---------- Latest vertical scroll (manual only, no auto-scroll) ---------- */
-function initLatestAutoScroll() {
-  const list = document.getElementById('latestList');
-  if (!list) return;
+    /* ---------- Latest vertical auto-scroll (pauses on hover/touch) ---------- */
+    let latestInterval;
+    function initLatestAutoScroll(){
+      const list = document.getElementById('latestList');
+      if(!list) return;
+      const items = list.children.length;
+      // auto-scroll only when more than 3 items (user requirement)
+      if(items <= 3) return;
 
-  // Scroll manually only (auto-scroll removed)
-  // If you want, you can keep recalc for layout use:
-  const first = list.firstElementChild;
-  if (first) {
-    const scrollStep = first.getBoundingClientRect().height + 12;
-    console.log("Manual scroll active, step:", scrollStep);
-  }
-}
+      let paused = false;
+      let scrollStep = 0;
+      let lastIndex = 0;
 
+      function recalc(){
+        // compute an approximate step: height of first card + gap (12px)
+        const first = list.firstElementChild;
+        if(first) scrollStep = first.getBoundingClientRect().height + 12;
+      }
+
+      recalc();
       // recalc on resize to keep mobile friendly
       window.addEventListener('resize', recalc);
 
@@ -812,10 +818,3 @@ function initLatestAutoScroll() {
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
