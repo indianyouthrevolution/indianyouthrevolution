@@ -652,7 +652,7 @@ window.addEventListener('resize', () => {
       {id:'IYRT80',name:'TAMMIM UMMAR',phone:'6291****80',email:'tammemumar@gmail.com',status:'Active'},
       {id:'IYRN25',name:'NAYMAT JAHAN',phone:'9836****34',email:'anjumsitara21@gmail.com',status:'Active'},
       {id:'IYRY23',name:'YADAV SHARMA',phone:'7319****49',email:'xarmayadav@gmail.com',status:'Active'},
-      {id:'m-008',name:'Member 8',phone:'9000000008',email:'m8@example.com',status:'Inactive'},
+      {id:'IYRD01',name:'DAMISH',phone:'9775238215',email:'danishalam81598@gmail.com',status:'Active'},
       {id:'m-009',name:'Member 9',phone:'9000000009',email:'m9@example.com',status:'Active'},
       {id:'m-010',name:'Member 10',phone:'9000000010',email:'m10@example.com',status:'Active'}
     ];
@@ -728,26 +728,20 @@ window.addEventListener('resize', () => {
       cards.forEach(c=> list.appendChild(c));
     })();
 
-    /* ---------- Latest vertical auto-scroll (pauses on hover/touch) ---------- */
-    let latestInterval;
-    function initLatestAutoScroll(){
-      const list = document.getElementById('latestList');
-      if(!list) return;
-      const items = list.children.length;
-      // auto-scroll only when more than 3 items (user requirement)
-      if(items <= 3) return;
+  /* ---------- Latest vertical scroll (manual only, no auto-scroll) ---------- */
+function initLatestAutoScroll() {
+  const list = document.getElementById('latestList');
+  if (!list) return;
 
-      let paused = false;
-      let scrollStep = 0;
-      let lastIndex = 0;
+  // Scroll manually only (auto-scroll removed)
+  // If you want, you can keep recalc for layout use:
+  const first = list.firstElementChild;
+  if (first) {
+    const scrollStep = first.getBoundingClientRect().height + 12;
+    console.log("Manual scroll active, step:", scrollStep);
+  }
+}
 
-      function recalc(){
-        // compute an approximate step: height of first card + gap (12px)
-        const first = list.firstElementChild;
-        if(first) scrollStep = first.getBoundingClientRect().height + 12;
-      }
-
-      recalc();
       // recalc on resize to keep mobile friendly
       window.addEventListener('resize', recalc);
 
@@ -818,6 +812,7 @@ window.addEventListener('resize', () => {
   </script>
 </body>
 </html>
+
 
 
 
